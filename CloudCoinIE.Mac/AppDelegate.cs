@@ -1,13 +1,22 @@
 ﻿using AppKit;
 using Foundation;
+using CloudCoinCore;
+using System.Diagnostics;
+using System.IO;
 
 namespace CloudCoinIE.Mac
 {
     [Register("AppDelegate")]
     public class AppDelegate : NSApplicationDelegate
     {
+        FileUtils fileUtils;
+        string defaultPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal) +
+                                   Path.DirectorySeparatorChar + Config.HomeFolder + Path.DirectorySeparatorChar;
+
         public AppDelegate()
         {
+            fileUtils = FileUtils.GetInstance(defaultPath);
+            fileUtils.CreateDirectoryStructure();
         }
 
         public override void DidFinishLaunching(NSNotification notification)

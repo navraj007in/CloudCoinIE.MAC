@@ -92,6 +92,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Controller\" />
+    <Folder Include="CloudCoin\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -105,30 +107,85 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="CloudCoin\CoreLogger.cs" />
+    <Compile Include="CloudCoin\DetectionAgent.cs" />
+    <Compile Include="CloudCoin\Detector.cs" />
+    <Compile Include="CloudCoin\Dumper.cs" />
+    <Compile Include="CloudCoin\Banker.cs" />
+    <Compile Include="CloudCoin\CloudCoin.cs" />
+    <Compile Include="CloudCoin\CoinUtils.cs" />
+    <Compile Include="CloudCoin\Config.cs" />
+    <Compile Include="CloudCoin\Exporter.cs" />
+    <Compile Include="CloudCoin\FileUtils.cs" />
+    <Compile Include="CloudCoin\FixitHelper.cs" />
+    <Compile Include="CloudCoin\Frack_Fixer.cs" />
+    <Compile Include="CloudCoin\IExporter.cs" />
+    <Compile Include="CloudCoin\IFileUtils.cs" />
+    <Compile Include="CloudCoin\IImporter.cs" />
+    <Compile Include="CloudCoin\Importer.cs" />
+    <Compile Include="CloudCoin\Logger.cs" />
+    <Compile Include="CloudCoin\MindStorage.cs" />
+    <Compile Include="CloudCoin\RAIDA.cs" />
+    <Compile Include="CloudCoin\RAIDA_Status.cs" />
+    <Compile Include="CloudCoin\Response.cs" />
     <Compile Include="Stack.cs" />
-    <Compile Include="Response.cs" />
-    <Compile Include="RAIDA_Status.cs" />
-    <Compile Include="RAIDA.cs" />
-    <Compile Include="Importer.cs" />
-    <Compile Include="Frack_Fixer.cs" />
-    <Compile Include="FileUtils.cs" />
-    <Compile Include="Exporter.cs" />
-    <Compile Include="Dumper.cs" />
-    <Compile Include="DetectionAgent.cs" />
-    <Compile Include="CoreLogger.cs" />
-    <Compile Include="CoinUtils.cs" />
-    <Compile Include="CloudCoin.cs" />
-    <Compile Include="Banker.cs" />
-    <Compile Include="Detector.cs" />
-    <Compile Include="FixitHelper.cs" />
-    <Compile Include="IExporter.cs" />
-    <Compile Include="IFileUtils.cs" />
-    <Compile Include="IImporter.cs" />
-    <Compile Include="Logger.cs" />
-    <Compile Include="MindStorage.cs" />
+    <Compile Include="Controller\Echo.cs" />
+    <Compile Include="Controller\Echo.designer.cs">
+      <DependentUpon>Echo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\EchoController.cs" />
+    <Compile Include="Controller\EchoController.designer.cs">
+      <DependentUpon>EchoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\BankView.cs" />
+    <Compile Include="Controller\BankViewController.cs" />
+    <Compile Include="Controller\BankView.designer.cs">
+      <DependentUpon>BankView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\BankViewController.designer.cs">
+      <DependentUpon>BankViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ImportView.cs" />
+    <Compile Include="Controller\ImportViewController.cs" />
+    <Compile Include="Controller\ImportView.designer.cs">
+      <DependentUpon>ImportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ImportViewController.designer.cs">
+      <DependentUpon>ImportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\EchoView.cs" />
+    <Compile Include="Controller\EchoViewController.cs" />
+    <Compile Include="Controller\EchoView.designer.cs">
+      <DependentUpon>EchoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\EchoViewController.designer.cs">
+      <DependentUpon>EchoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ExportView.cs" />
+    <Compile Include="Controller\ExportViewController.cs" />
+    <Compile Include="Controller\ExportView.designer.cs">
+      <DependentUpon>ExportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ExportViewController.designer.cs">
+      <DependentUpon>ExportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ConfigureView.cs" />
+    <Compile Include="Controller\ConfigureViewController.cs" />
+    <Compile Include="Controller\ConfigureView.designer.cs">
+      <DependentUpon>ConfigureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ConfigureViewController.designer.cs">
+      <DependentUpon>ConfigureViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Controller\Echo.xib" />
+    <InterfaceDefinition Include="Controller\BankView.xib" />
+    <InterfaceDefinition Include="Controller\ImportView.xib" />
+    <InterfaceDefinition Include="Controller\EchoView.xib" />
+    <InterfaceDefinition Include="Controller\ExportView.xib" />
+    <InterfaceDefinition Include="Controller\ConfigureView.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

@@ -18,6 +18,7 @@ namespace CloudCoinIE.Mac
             // Do any additional setup after loading the view.
         }
 
+       
         public override NSObject RepresentedObject
         {
             get
