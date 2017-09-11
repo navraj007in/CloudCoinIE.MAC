@@ -1,26 +1,15 @@
 ﻿<Properties StartupConfiguration="{D1A5EC17-600E-4BE1-B0F3-363B09638531}|Default">
   <MonoDevelop.Ide.ItemProperties.CloudCoinIE.Mac PreferredExecutionTarget="Test1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/Controller/ConfigureViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/Controller/EchoViewController.cs">
     <Files>
-      <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="15" Column="9" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/DetectionAgent.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/IFileUtils.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Importer.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/IImporter.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Frack_Fixer.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/Main.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/ViewController.cs" Line="17" Column="41" />
       <File FileName="CloudCoinIE.Mac/ViewController.designer.cs" Line="27" Column="1" />
-      <File FileName="CloudCoinIE.Mac/EchoViewController.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/EchoViewControllerController.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/Echo.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/EchoController.cs" Line="20" Column="45" />
-      <File FileName="CloudCoinIE.Mac/Controller/BankView.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/BankViewController.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/ImportView.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/EchoView.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIE.Mac/Controller/EchoViewController.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/Controller/EchoViewController.cs" Line="132" Column="25" />
       <File FileName="CloudCoinIE.Mac/Controller/ExportView.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/ConfigureView.cs" Line="1" Column="1" />

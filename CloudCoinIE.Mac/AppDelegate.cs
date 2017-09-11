@@ -9,7 +9,7 @@ namespace CloudCoinIE.Mac
     [Register("AppDelegate")]
     public class AppDelegate : NSApplicationDelegate
     {
-        FileUtils fileUtils;
+        public static FileUtils fileUtils;
         string defaultPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal) +
                                    Path.DirectorySeparatorChar + Config.HomeFolder + Path.DirectorySeparatorChar;
 

@@ -34,3 +34,13 @@
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Poy-TR-h16-view-o3Y-dC-QCt.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/Echo.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Echo.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/BankView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/ImportView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/EchoView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/ExportView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/ConfigureView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/BankView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/ConfigureView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/EchoView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/ExportView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/ImportView.nib
