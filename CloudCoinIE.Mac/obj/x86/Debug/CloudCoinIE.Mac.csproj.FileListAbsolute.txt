@@ -1,0 +1,30 @@
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/CloudCoin IE.exe
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/CloudCoin IE.pdb
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/partial-info.plist
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/asset-manifest.plist
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/bundle/AppIcon.icns
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/Main.storyboardc
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Info.plist
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/MainMenu.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csproj.CoreCompileInputs.cache
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.exe
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.pdb
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csprojResolveAssemblyReference.cache
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/Newtonsoft.Json.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PCLCrypto.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.BCrypt.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.Kernel32.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.NCrypt.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.Windows.Core.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/SkiaSharp.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/Validation.dll
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/Newtonsoft.Json.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.Windows.Core.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.Kernel32.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.BCrypt.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.NCrypt.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/Validation.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PCLCrypto.xml
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/SkiaSharp.xml

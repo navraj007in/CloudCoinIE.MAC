@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{D1A5EC17-600E-4BE1-B0F3-363B09638531}|Default">
+  <MonoDevelop.Ide.ItemProperties.CloudCoinIE.Mac PreferredExecutionTarget="Test1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/Main.cs">
+    <Files>
+      <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="15" Column="63" />
+      <File FileName="CloudCoinIE.Mac/RAIDA.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/DetectionAgent.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/CoreLogger.cs" Line="17" Column="2" />
+      <File FileName="CloudCoinIE.Mac/Logger.cs" Line="23" Column="6" />
+      <File FileName="CloudCoinIE.Mac/IFileUtils.cs" Line="50" Column="25" />
+      <File FileName="CloudCoinIE.Mac/Importer.cs" Line="7" Column="1" />
+      <File FileName="CloudCoinIE.Mac/IImporter.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/Frack_Fixer.cs" Line="10" Column="17" />
+      <File FileName="CloudCoinIE.Mac/FileUtils.cs" Line="94" Column="14" />
+      <File FileName="CloudCoinIE.Mac/Main.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/ViewController.cs" Line="22" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
