@@ -15,6 +15,8 @@ namespace CloudCoinIE.Mac
         {
             base.ViewDidLoad();
             this.Title = "CloudCoin IE";
+
+	
             // Do any additional setup after loading the view.
         }
 

@@ -1,2 +1,2 @@
-2017-09-12 01:31:13.393 CloudCoin IE[2384:85280] Failed to connect (lblSerbi) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
-2017-09-12 01:31:13.394 CloudCoin IE[2384:85280] Failed to connect (lblUK) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
+2017-09-14 23:47:23.171 CloudCoin IE[7403:248883] Failed to connect (lblSerbi) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
+2017-09-14 23:47:23.172 CloudCoin IE[7403:248883] Failed to connect (lblUK) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable

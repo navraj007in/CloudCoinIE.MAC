@@ -21,6 +21,7 @@ namespace CloudCoinIE.Mac
 
         public override void DidFinishLaunching(NSNotification notification)
         {
+            
             // Insert code here to initialize your application
         }
 

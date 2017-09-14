@@ -1,15 +1,5 @@
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/CloudCoin IE.exe
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/CloudCoin IE.pdb
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/partial-info.plist
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/asset-manifest.plist
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/bundle/AppIcon.icns
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/Main.storyboardc
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Info.plist
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/MainMenu.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csproj.CoreCompileInputs.cache
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.exe
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.pdb
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csprojResolveAssemblyReference.cache
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/Newtonsoft.Json.dll
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PCLCrypto.dll
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PInvoke.BCrypt.dll
@@ -26,14 +16,11 @@
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/Validation.xml
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/PCLCrypto.xml
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/SkiaSharp.xml
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/NSTabViewController-0La-Vq-TZR.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Odd-rB-wX6-view-EiL-gd-cUw.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/ay1-Pn-qcO-view-cic-kP-wKp.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/0m0-XQ-6kp-view-pCL-xb-jE8.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/AeY-E3-wBE-view-F8R-be-hGl.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Poy-TR-h16-view-o3Y-dC-QCt.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/partial-info.plist
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/asset-manifest.plist
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/bundle/AppIcon.icns
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/Main.storyboardc
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/Echo.nib
-/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Echo.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/BankView.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/ImportView.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/EchoView.nib
@@ -41,6 +28,19 @@
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool-manifests/ConfigureView.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/BankView.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/ConfigureView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Echo.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/EchoView.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/ExportView.nib
 /Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/ImportView.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/0m0-XQ-6kp-view-pCL-xb-jE8.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/AeY-E3-wBE-view-F8R-be-hGl.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Info.plist
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/MainMenu.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/NSTabViewController-0La-Vq-TZR.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Odd-rB-wX6-view-EiL-gd-cUw.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Poy-TR-h16-view-o3Y-dC-QCt.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/ay1-Pn-qcO-view-cic-kP-wKp.nib
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csprojResolveAssemblyReference.cache
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csproj.CoreCompileInputs.cache
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.exe
+/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.pdb
