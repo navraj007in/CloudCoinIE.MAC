@@ -935,22 +935,38 @@
         <!--Import-->
         <scene sceneID="UB9-h2-FxY">
             <objects>
-                <viewController title="Import" id="Odd-rB-wX6" sceneMemberID="viewController">
+                <viewController title="Import" id="Odd-rB-wX6" customClass="ImportViewController" sceneMemberID="viewController">
                     <view key="view" id="EiL-gd-cUw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyl-Oj-AAD">
-                                <rect key="frame" x="134" y="422" width="118" height="17"/>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNA-QI-eL4">
+                                <rect key="frame" x="261" y="396" width="80" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Import CloudCoins" id="1Me-sO-LPu">
+                                <buttonCell key="cell" type="push" title="Import" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vd0-AP-Gjt">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="importClicked:" target="Odd-rB-wX6" id="BbN-Cf-DwT"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K0-Tm-Py6">
+                                <rect key="frame" x="48" y="53" width="505" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" allowsEditingTextAttributes="YES" id="Hxv-O0-u6e">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="Click_Import" destination="DNA-QI-eL4" id="exk-eg-D2q"/>
+                        <outlet property="import_Click" destination="DNA-QI-eL4" id="ehw-bc-1iJ"/>
+                        <outlet property="txtLogs" destination="6K0-Tm-Py6" id="NQc-BH-aNu"/>
+                    </connections>
                 </viewController>
                 <customObject id="kU9-0h-qmh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

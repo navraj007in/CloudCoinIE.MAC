@@ -1,17 +1,42 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using AppKit;
 
 namespace CloudCoinCore
 {
+	public class ProgressEventArgs : EventArgs
+	{
+		public string Status { get; private set; }
+		public int percentage { get; private set; }
+		public ProgressEventArgs(string status, int percentage = 0)
+		{
+			Status = status;
+			this.percentage = percentage;
+		}
+
+
+	}
     public class Detector
     {
         /*  INSTANCE VARIABLES */
         RAIDA raida;
         FileUtils fileUtils;
         int detectTime = 5000;
-        
+        public NSTextField txtLogs;
+        public int totalImported = 0;
 
+		public delegate void StatusUpdateHandler(object sender, ProgressEventArgs e);
+		public event StatusUpdateHandler OnUpdateStatus;
+
+		private void UpdateStatus(string status, int percentage = 0)
+		{
+			// Make sure someone is listening to event
+			if (OnUpdateStatus == null) return;
+
+			ProgressEventArgs args = new ProgressEventArgs(status, percentage);
+			OnUpdateStatus(this, args);
+		}
 
         /*  CONSTRUCTOR */
         public Detector(FileUtils fileUtils, int timeout)
@@ -59,8 +84,13 @@ namespace CloudCoinCore
                         Console.Out.WriteLine("Now scanning coin " + (j + 1) + " of " + suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) + ", Denomination: " + cu.getDenomination());
                         CoreLogger.Log("Now scanning coin " + (j + 1) + " of " + suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) + ", Denomination: " + cu.getDenomination());
                         Console.Out.WriteLine("");
+						BeginInvokeOnMainThread(() =>
 
-                        CoinUtils detectedCC = this.raida.detectCoin(cu, detectTime);
+				txtLogs.StringValue += "Now scanning coin " + (j + 1) + " of " +
+                            suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) +
+                                                ", Denomination: " + cu.getDenomination());
+
+			            CoinUtils detectedCC = this.raida.detectCoin(cu, detectTime);
                         cu.calcExpirationDate();
 
                         if (j == 0)//If we are detecting the first coin, note if the RAIDA are working

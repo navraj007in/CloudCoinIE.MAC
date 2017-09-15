@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3568E1640000000000000000"
+               BlueprintIdentifier = "EA2656380000000000000000"
                BuildableName = "CloudCoinIE.Mac.app"
                BlueprintName = "CloudCoinIE.Mac"
                ReferencedContainer = "container:CloudCoinIE.Mac.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3568E1640000000000000000"
+            BlueprintIdentifier = "EA2656380000000000000000"
             BuildableName = "CloudCoinIE.Mac.app"
             BlueprintName = "CloudCoinIE.Mac"
             ReferencedContainer = "container:CloudCoinIE.Mac.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3568E1640000000000000000"
+            BlueprintIdentifier = "EA2656380000000000000000"
             BuildableName = "CloudCoinIE.Mac.app"
             BlueprintName = "CloudCoinIE.Mac"
             ReferencedContainer = "container:CloudCoinIE.Mac.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3568E1640000000000000000"
+            BlueprintIdentifier = "EA2656380000000000000000"
             BuildableName = "CloudCoinIE.Mac.app"
             BlueprintName = "CloudCoinIE.Mac"
             ReferencedContainer = "container:CloudCoinIE.Mac.xcodeproj">

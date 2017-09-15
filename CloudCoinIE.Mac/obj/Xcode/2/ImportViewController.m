@@ -9,4 +9,9 @@
 
 @implementation ImportViewController
 
+@synthesize Click_Import = _Click_Import;
+@synthesize txtLogs = _txtLogs;
+
+- (IBAction)importClicked:(id)sender {
+}
 @end

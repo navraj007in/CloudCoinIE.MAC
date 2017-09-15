@@ -10,16 +10,36 @@
 
 
 @interface BankViewController : NSViewController {
-    IBOutlet NSTextField *lblOnesCount;
-    IBOutlet NSTextField *lblFivesCount;
-    IBOutlet NSTextField *lblQtrsCount;
-    IBOutlet NSTextField *lblHundredsCount;
-    IBOutlet NSTextField *lblTwoFiftiesCount;
-    IBOutlet NSTextField *lblOnesTotal;
-    IBOutlet NSTextField *lblFivesTotal;
-    IBOutlet NSTextField *lblQtrsTotal;
-    IBOutlet NSTextField *lblHundredsTotal;
-    IBOutlet NSTextField *lblTwoFiftiesTotal;
+	NSTextField *_lblFivesCount;
+	NSTextField *_lblFivesTotal;
+	NSTextField *_lblHundredsCount;
+	NSTextField *_lblHundredsTotal;
+	NSTextField *_lblOnesCount;
+	NSTextField *_lblOnesTotal;
+	NSTextField *_lblQtrsCount;
+	NSTextField *_lblQtrsTotal;
+	NSTextField *_lblTwoFiftiesCount;
+	NSTextField *_lblTwoFiftiesTotal;
 }
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblFivesCount;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblFivesTotal;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblHundredsCount;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblHundredsTotal;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblOnesCount;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblOnesTotal;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblQtrsCount;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblQtrsTotal;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblTwoFiftiesCount;
+
+@property (nonatomic, retain) IBOutlet NSTextField *lblTwoFiftiesTotal;
 
 @end

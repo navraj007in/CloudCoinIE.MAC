@@ -8,6 +8,16 @@
 #import "BankViewController.h"
 
 @implementation BankViewController
-@synthesize lblOnesTotal;
+
+@synthesize lblFivesCount = _lblFivesCount;
+@synthesize lblFivesTotal = _lblFivesTotal;
+@synthesize lblHundredsCount = _lblHundredsCount;
+@synthesize lblHundredsTotal = _lblHundredsTotal;
+@synthesize lblOnesCount = _lblOnesCount;
+@synthesize lblOnesTotal = _lblOnesTotal;
+@synthesize lblQtrsCount = _lblQtrsCount;
+@synthesize lblQtrsTotal = _lblQtrsTotal;
+@synthesize lblTwoFiftiesCount = _lblTwoFiftiesCount;
+@synthesize lblTwoFiftiesTotal = _lblTwoFiftiesTotal;
 
 @end

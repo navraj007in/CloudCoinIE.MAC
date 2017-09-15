@@ -10,6 +10,15 @@
 
 
 @interface ImportViewController : NSViewController {
+
+    IBOutlet NSTextField *txtLogs;
+    IBOutlet NSButton *import_Click;
+
 }
+
+- (IBAction)importClicked:(id)sender;
+
+
+
 
 @end
