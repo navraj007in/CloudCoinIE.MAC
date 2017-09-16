@@ -18,7 +18,7 @@ namespace CloudCoinCore
         public enum Folder { Suspect, Counterfeit, Fracked, Bank, Trash };
         public Folder folder;
         public String[] gradeStatus = new String[3];// What passed, what failed, what was undetected
-
+        public string coinStatus = "";
 
         //CONSTRUCTORS
         public CoinUtils( CloudCoin cc )
@@ -444,21 +444,25 @@ namespace CloudCoinCore
             {
                 // not enough RAIDA to have a quorum
                 folder = Folder.Suspect;
+                coinStatus = "Suspect";
             }
             else if (failed > passed)
             {
                 // failed out numbers passed with a quorum: Counterfeit
                 folder = Folder.Counterfeit;
+                coinStatus = "Counterfeit";
             }
             else if (failed > 0)
             {
                 // The quorum majority said the coin passed but some disagreed: fracked. 
                 folder = Folder.Fracked;
+                coinStatus = "Fracked";
             }
             else
             {
                 // No fails, all passes: bank
                 folder = Folder.Bank;
+                coinStatus = "Authentic";
             }
 
             gradeStatus[0] = passedDesc;

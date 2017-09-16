@@ -54,10 +54,15 @@ namespace CloudCoinCore
         /// <returns></returns>
         public int[] detectAll()
         {
-            // LOAD THE .suspect COINS ONE AT A TIME AND TEST THEM
-            int[] results = new int[4]; // [0] Coins to bank, [1] Coins to fracked [2] Coins to Counterfeit
-            String[] suspectFileNames = new DirectoryInfo(this.fileUtils.suspectFolder).GetFiles().Select(o => o.Name).ToArray();//Get all files in suspect folder
-            int totalValueToBank = 0;
+			DirectoryInfo dirJPegs = new DirectoryInfo(fileUtils.suspectFolder);
+
+			// LOAD THE .suspect COINS ONE AT A TIME AND TEST THEM
+			int[] results = new int[4]; // [0] Coins to bank, [1] Coins to fracked [2] Coins to Counterfeit
+			String[] suspectFileNames = new DirectoryInfo(fileUtils.suspectFolder).GetFiles("*.stack")
+																				  .Union(dirJPegs.GetFiles("*.jpeg"))
+																				  .Select(o => o.Name)
+																				  .ToArray();//Get all files in suspect folder
+			int totalValueToBank = 0;
             int totalValueToCounterfeit = 0;
             int totalValueToFractured = 0;
             int totalValueToKeptInSuspect = 0;
@@ -71,9 +76,11 @@ namespace CloudCoinCore
                     {//Coin has already been imported. Delete it from import folder move to trash.
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.Out.WriteLine("You tried to import a coin that has already been imported.");
+                        UpdateStatus("You tried to import a coin that has already been imported.");
                         CoreLogger.Log("You tried to import a coin that has already been imported.");
                         File.Move(this.fileUtils.suspectFolder + suspectFileNames[j], this.fileUtils.trashFolder + suspectFileNames[j]);
                         Console.Out.WriteLine("Suspect CloudCoin was moved to Trash folder.");
+                        UpdateStatus("Suspect CloudCoin was moved to Trash folder.");
                         CoreLogger.Log("Suspect CloudCoin was moved to Trash folder.");
                         Console.ForegroundColor = ConsoleColor.White;
                     }
@@ -84,13 +91,14 @@ namespace CloudCoinCore
                         Console.Out.WriteLine("Now scanning coin " + (j + 1) + " of " + suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) + ", Denomination: " + cu.getDenomination());
                         CoreLogger.Log("Now scanning coin " + (j + 1) + " of " + suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) + ", Denomination: " + cu.getDenomination());
                         Console.Out.WriteLine("");
-						BeginInvokeOnMainThread(() =>
 
-				txtLogs.StringValue += "Now scanning coin " + (j + 1) + " of " +
-                            suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) +
-                                                ", Denomination: " + cu.getDenomination());
+						UpdateStatus("Now scanning coin " + (j + 1) + " of " +
+							suspectFileNames.Length + " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) +
+                                     ", Denomination: " + cu.getDenomination());
 
+						
 			            CoinUtils detectedCC = this.raida.detectCoin(cu, detectTime);
+                        UpdateStatus("Coin Status - " + detectedCC.coinStatus);
                         cu.calcExpirationDate();
 
                         if (j == 0)//If we are detecting the first coin, note if the RAIDA are working
@@ -128,9 +136,13 @@ namespace CloudCoinCore
                         }//end switch
 
 
+						double percentCompleted = (j + 1) * 100 / suspectFileNames.Length;
+						UpdateStatus("Scanned coin " + (j + 1) + " of " + suspectFileNames.Length +
+									 " for counterfeit. SN " + string.Format("{0:n0}", newCC.sn) + ", Denomination: " +
+									 cu.getDenomination(), Convert.ToInt32(percentCompleted));
 
-                        // end switch on the place the coin will go 
-                        if (!coinSupect)//Leave coin in the suspect folder if RAIDA is down
+						// end switch on the place the coin will go 
+						if (!coinSupect)//Leave coin in the suspect folder if RAIDA is down
                         {
                             File.Delete(this.fileUtils.suspectFolder + suspectFileNames[j]);//Take the coin out of the suspect folder
                         }
@@ -142,8 +154,10 @@ namespace CloudCoinCore
                             Console.Out.WriteLine("Try again later.");
                             CoreLogger.Log("Not enough RAIDA were contacted to determine if the coin is authentic. Try again later.");
                             Console.ForegroundColor = ConsoleColor.White;
+                            UpdateStatus("Not enough RAIDA were contacted to determine if the coin is authentic.");
+                            UpdateStatus("Try again later.");
+                            UpdateStatus("Not enough RAIDA were contacted to determine if the coin is authentic. Try again later.");
                         }//end if else
-
                     }//end if file exists
                 }
                 catch (FileNotFoundException ex)
@@ -262,7 +276,11 @@ namespace CloudCoinCore
                 {
                     Console.Out.WriteLine(ioex);
                     CoreLogger.Log(ioex.ToString());
-                }// end try catch
+                }
+                catch(Exception iex) {
+                    UpdateStatus(iex.Message);
+                }
+                // end try catch
             }// end for each coin to import
             results[0] = totalValueToBank;
             results[1] = totalValueToCounterfeit;

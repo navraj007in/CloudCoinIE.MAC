@@ -728,15 +728,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw2-xH-Qhl">
-                                <rect key="frame" x="242" y="413" width="101" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CloudCoin Bank" id="0Oj-0X-D6a">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Bank Details" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-MA-Mau">
                                 <rect key="frame" x="45" y="68" width="497" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -913,6 +904,15 @@
                                     </subviews>
                                 </view>
                             </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw2-xH-Qhl">
+                                <rect key="frame" x="137" y="413" width="327" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="CloudCoin Bank" id="0Oj-0X-D6a">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -924,6 +924,7 @@
                         <outlet property="lblOnesTotal" destination="j5F-4X-rcj" id="LfP-pV-GgA"/>
                         <outlet property="lblQtrsCount" destination="Wae-f5-QoG" id="cdv-b5-qRG"/>
                         <outlet property="lblQtrsTotal" destination="GuO-TQ-0Wm" id="fZB-9j-Pw9"/>
+                        <outlet property="lblTotalCoins" destination="kw2-xH-Qhl" id="ITY-yG-QgN"/>
                         <outlet property="lblTwoFiftiesCount" destination="bNb-aE-Dxi" id="LyE-ea-uBI"/>
                         <outlet property="lblTwoFiftiesTotal" destination="c3K-ri-cS3" id="rvq-TA-9tH"/>
                     </connections>
@@ -941,7 +942,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNA-QI-eL4">
-                                <rect key="frame" x="261" y="396" width="80" height="32"/>
+                                <rect key="frame" x="261" y="404" width="145" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Import" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vd0-AP-Gjt">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -951,26 +952,59 @@
                                     <action selector="importClicked:" target="Odd-rB-wX6" id="BbN-Cf-DwT"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K0-Tm-Py6">
-                                <rect key="frame" x="48" y="53" width="505" height="318"/>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJn-BX-H7r">
+                                <rect key="frame" x="13" y="20" width="581" height="353"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" ambiguous="YES" id="fTC-a8-Zgy">
+                                    <rect key="frame" x="1" y="1" width="579" height="351"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="gkU-Ol-YER">
+                                            <rect key="frame" x="0.0" y="0.0" width="579" height="351"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="579" height="351"/>
+                                            <size key="maxSize" width="581" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="sO5-nC-iy9">
+                                    <rect key="frame" x="1" y="336" width="579" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="m4r-6e-Ui7">
+                                    <rect key="frame" x="564" y="1" width="16" height="351"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="deK-jl-T4s">
+                                <rect key="frame" x="18" y="380" width="430" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" allowsEditingTextAttributes="YES" id="Hxv-O0-u6e">
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRN-Kg-Cjg">
+                                <rect key="frame" x="491" y="381" width="111" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="VZ7-ol-431">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="Click_Import" destination="DNA-QI-eL4" id="exk-eg-D2q"/>
+                        <outlet property="importProgressBar" destination="deK-jl-T4s" id="JYg-9N-fm5"/>
                         <outlet property="import_Click" destination="DNA-QI-eL4" id="ehw-bc-1iJ"/>
-                        <outlet property="txtLogs" destination="6K0-Tm-Py6" id="NQc-BH-aNu"/>
+                        <outlet property="lblProgress" destination="ZRN-Kg-Cjg" id="IuQ-97-q5e"/>
+                        <outlet property="txtImportLog" destination="gkU-Ol-YER" id="JkY-VN-Li6"/>
                     </connections>
                 </viewController>
                 <customObject id="kU9-0h-qmh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="1241"/>
+            <point key="canvasLocation" x="713" y="1285"/>
         </scene>
         <!--Echo-->
         <scene sceneID="Yxx-nJ-HA9">
@@ -1283,35 +1317,50 @@
         <!--Configure-->
         <scene sceneID="TeS-aE-xz8">
             <objects>
-                <viewController title="Configure" id="Poy-TR-h16" customClass="EchoController" sceneMemberID="viewController">
+                <viewController title="Configure" id="Poy-TR-h16" customClass="ConfigureViewController" sceneMemberID="viewController">
                     <view key="view" identifier="echoController" id="o3Y-dC-QCt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField identifier="lblEcho" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dON-IP-lpO">
-                                <rect key="frame" x="126" y="390" width="110" height="17"/>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ctv-yf-4uw">
+                                <rect key="frame" x="71" y="335" width="167" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Echo Servers" id="3zK-T7-k7I">
+                                <buttonCell key="cell" type="push" title="Backup" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h16-I8-PaF">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jo8-pa-i6j">
-                                <rect key="frame" x="77" y="314" width="112" height="32"/>
+                                    <connections>
+                                        <action selector="backupClick:" target="Poy-TR-h16" id="TFX-9X-FVz"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8X-tO-d16">
+                                <rect key="frame" x="71" y="229" width="167" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Echo RAIDA" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UvM-aU-5c8">
+                                <buttonCell key="cell" type="push" title="Change Workspace" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HtW-rD-7in">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="cmdEcho:" target="Poy-TR-h16" id="ZFy-Bj-Gap"/>
+                                    <action selector="changeFolders:" target="Poy-TR-h16" id="ylU-mf-gnp"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzD-O8-EQc">
+                                <rect key="frame" x="71" y="285" width="167" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Show Folders" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q7C-p8-Csa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showFolders:" target="Poy-TR-h16" id="DQ4-OO-W6n"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="lblEcho" destination="dON-IP-lpO" id="oXe-QB-iBl"/>
+                        <outlet property="BackupClick" destination="Ctv-yf-4uw" id="Bc8-ZJ-Of0"/>
+                        <outlet property="ChangeWorkspaceClick" destination="E8X-tO-d16" id="gre-gL-PUH"/>
+                        <outlet property="ShowFoldersClick" destination="lzD-O8-EQc" id="UTf-aH-pgQ"/>
                     </connections>
                 </viewController>
                 <customObject id="414-uP-9Mu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

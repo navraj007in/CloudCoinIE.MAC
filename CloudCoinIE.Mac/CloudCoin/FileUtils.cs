@@ -75,34 +75,40 @@ namespace CloudCoinCore
 
             CloudCoin returnCC = new CloudCoin();
 
+            try {
+				String incomeJson = this.importJSON(loadFilePath);
+				//STRIP UNESSARY test
+				int secondCurlyBracket = ordinalIndexOf(incomeJson, "{", 2) - 1;
+				int firstCloseCurlyBracket = ordinalIndexOf(incomeJson, "}", 0) - secondCurlyBracket;
+				// incomeJson = incomeJson.Substring(secondCurlyBracket, firstCloseCurlyBracket);
+				incomeJson = incomeJson.Substring(secondCurlyBracket, firstCloseCurlyBracket + 1);
+				// Console.Out.WriteLine(incomeJson);
+				//Deserial JSON
+
+				try
+				{
+					returnCC = JsonConvert.DeserializeObject<CloudCoin>(incomeJson);
+
+				}
+				catch (JsonReaderException)
+				{
+					Console.WriteLine("There was an error reading files in your bank.");
+					CoreLogger.Log("There was an error reading files in your bank.");
+					Console.WriteLine("You may have the aoid memo bug that uses too many double quote marks.");
+					Console.WriteLine("Your bank files are stored using and older version that did not use properly formed JSON.");
+					Console.WriteLine("Would you like to upgrade these files to the newer standard?");
+					Console.WriteLine("Your files will be edited.");
+					Console.WriteLine("1 for yes, 2 for no.");
+
+
+				}
+
+			}
+            catch(Exception ex){
+                Console.WriteLine(ex.Message);
+            }
             //Load file as JSON
-            String incomeJson = this.importJSON(loadFilePath);
-            //STRIP UNESSARY test
-            int secondCurlyBracket = ordinalIndexOf(incomeJson, "{", 2) - 1;
-            int firstCloseCurlyBracket = ordinalIndexOf(incomeJson, "}", 0) - secondCurlyBracket;
-            // incomeJson = incomeJson.Substring(secondCurlyBracket, firstCloseCurlyBracket);
-            incomeJson = incomeJson.Substring(secondCurlyBracket, firstCloseCurlyBracket + 1);
-            // Console.Out.WriteLine(incomeJson);
-            //Deserial JSON
-
-            try
-            {
-                 returnCC = JsonConvert.DeserializeObject<CloudCoin>(incomeJson);
-
-            }
-            catch (JsonReaderException)
-            {
-                Console.WriteLine("There was an error reading files in your bank.");
-                CoreLogger.Log("There was an error reading files in your bank.");
-                Console.WriteLine("You may have the aoid memo bug that uses too many double quote marks.");
-                Console.WriteLine("Your bank files are stored using and older version that did not use properly formed JSON.");
-                Console.WriteLine("Would you like to upgrade these files to the newer standard?");
-                Console.WriteLine("Your files will be edited.");
-                Console.WriteLine("1 for yes, 2 for no.");
-          
-
-            }
-
+   
             return returnCC;
         }//end load one CloudCoin from JSON
 

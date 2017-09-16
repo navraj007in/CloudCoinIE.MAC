@@ -9,29 +9,53 @@ using System.CodeDom.Compiler;
 
 namespace CloudCoinIE.Mac.Controller
 {
-	[Register ("ImportViewController")]
-	partial class ImportViewController
-	{
-		[Outlet]
-		AppKit.NSButton import_Click { get; set; }
+    [Register ("ImportViewController")]
+    partial class ImportViewController
+    {
+        [Outlet]
+        AppKit.NSButton import_Click { get; set; }
 
-		[Outlet]
-		AppKit.NSTextField txtLogs { get; set; }
+        [Outlet]
+        AppKit.NSProgressIndicator importProgressBar { get; set; }
 
-		[Action ("importClicked:")]
-		partial void importClicked (Foundation.NSObject sender);
-		
-		void ReleaseDesignerOutlets ()
-		{
-			if (txtLogs != null) {
-				txtLogs.Dispose ();
-				txtLogs = null;
-			}
+        [Outlet]
+        AppKit.NSTextField lblProgress { get; set; }
 
-			if (import_Click != null) {
-				import_Click.Dispose ();
-				import_Click = null;
-			}
-		}
-	}
+        [Outlet]
+        AppKit.NSTextView txtImportLog { get; set; }
+
+        [Outlet]
+        AppKit.NSTextField txtLogs { get; set; }
+
+        [Action ("importClicked:")]
+        partial void importClicked (Foundation.NSObject sender);
+        
+        void ReleaseDesignerOutlets ()
+        {
+            if (txtImportLog != null) {
+                txtImportLog.Dispose ();
+                txtImportLog = null;
+            }
+
+            if (importProgressBar != null) {
+                importProgressBar.Dispose ();
+                importProgressBar = null;
+            }
+
+            if (lblProgress != null) {
+                lblProgress.Dispose ();
+                lblProgress = null;
+            }
+
+            if (import_Click != null) {
+                import_Click.Dispose ();
+                import_Click = null;
+            }
+
+            if (txtLogs != null) {
+                txtLogs.Dispose ();
+                txtLogs = null;
+            }
+        }
+    }
 }

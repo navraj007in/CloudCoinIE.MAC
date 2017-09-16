@@ -37,6 +37,9 @@ namespace CloudCoinIE.Mac.Controller
 		AppKit.NSTextField lblQtrsTotal { get; set; }
 
 		[Outlet]
+		AppKit.NSTextField lblTotalCoins { get; set; }
+
+		[Outlet]
 		AppKit.NSTextField lblTwoFiftiesCount { get; set; }
 
 		[Outlet]
@@ -44,9 +47,9 @@ namespace CloudCoinIE.Mac.Controller
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (lblOnesCount != null) {
-				lblOnesCount.Dispose ();
-				lblOnesCount = null;
+			if (lblTotalCoins != null) {
+				lblTotalCoins.Dispose ();
+				lblTotalCoins = null;
 			}
 
 			if (lblFivesCount != null) {
@@ -54,9 +57,9 @@ namespace CloudCoinIE.Mac.Controller
 				lblFivesCount = null;
 			}
 
-			if (lblQtrsCount != null) {
-				lblQtrsCount.Dispose ();
-				lblQtrsCount = null;
+			if (lblFivesTotal != null) {
+				lblFivesTotal.Dispose ();
+				lblFivesTotal = null;
 			}
 
 			if (lblHundredsCount != null) {
@@ -64,9 +67,14 @@ namespace CloudCoinIE.Mac.Controller
 				lblHundredsCount = null;
 			}
 
-			if (lblTwoFiftiesCount != null) {
-				lblTwoFiftiesCount.Dispose ();
-				lblTwoFiftiesCount = null;
+			if (lblHundredsTotal != null) {
+				lblHundredsTotal.Dispose ();
+				lblHundredsTotal = null;
+			}
+
+			if (lblOnesCount != null) {
+				lblOnesCount.Dispose ();
+				lblOnesCount = null;
 			}
 
 			if (lblOnesTotal != null) {
@@ -74,9 +82,9 @@ namespace CloudCoinIE.Mac.Controller
 				lblOnesTotal = null;
 			}
 
-			if (lblFivesTotal != null) {
-				lblFivesTotal.Dispose ();
-				lblFivesTotal = null;
+			if (lblQtrsCount != null) {
+				lblQtrsCount.Dispose ();
+				lblQtrsCount = null;
 			}
 
 			if (lblQtrsTotal != null) {
@@ -84,9 +92,9 @@ namespace CloudCoinIE.Mac.Controller
 				lblQtrsTotal = null;
 			}
 
-			if (lblHundredsTotal != null) {
-				lblHundredsTotal.Dispose ();
-				lblHundredsTotal = null;
+			if (lblTwoFiftiesCount != null) {
+				lblTwoFiftiesCount.Dispose ();
+				lblTwoFiftiesCount = null;
 			}
 
 			if (lblTwoFiftiesTotal != null) {

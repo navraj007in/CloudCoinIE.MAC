@@ -17,6 +17,7 @@ namespace CloudCoinIE.Mac
         {
             fileUtils = FileUtils.GetInstance(defaultPath);
             fileUtils.CreateDirectoryStructure();
+
         }
 
         public override void DidFinishLaunching(NSNotification notification)

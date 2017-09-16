@@ -112,11 +112,12 @@ namespace CloudCoinIE.Mac.Controller
 				Console.Out.WriteLine("Try to Echo RAIDA and see if the status has changed.");
 				Console.ForegroundColor = ConsoleColor.White;
 
-                txtLogs.StringValue += ("You do not have enough RAIDA to perform an import operation.");
-                txtLogs.StringValue += ("Check to make sure your internet is working.");
-                txtLogs.StringValue += ("Make sure no routers at your work are blocking access to the RAIDA.");
-                txtLogs.StringValue += ("Try to Echo RAIDA and see if the status has changed.");
+                updateLog("You do not have enough RAIDA to perform an import operation.");
+                updateLog("Check to make sure your internet is working.");
+                updateLog("Make sure no routers at your work are blocking access to the RAIDA.");
+                updateLog("Try to Echo RAIDA and see if the status has changed.");
 
+                //txtImportLog.InsertText(new NSString());
                 import_Click.Enabled = true;
 				//cmdRestore.IsEnabled = true;
 
@@ -146,8 +147,8 @@ namespace CloudCoinIE.Mac.Controller
 			Detector detector = new Detector(fileUtils, timeout);
 
 			detector.OnUpdateStatus +=  Detector_OnUpdateStatus;
-			detector.txtLogs = txtLogs;
-			int[] detectionResults = detector.detectAll();
+			
+            int[] detectionResults = detector.detectAll();
 			Console.Out.WriteLine("  Total imported to bank: " + detectionResults[0]);//"Total imported to bank: "
 																					  //Console.Out.WriteLine("  Total imported to fracked: " + detectionResults[2]);//"Total imported to fracked: "
 			updateLog("  Total imported to bank: " + detectionResults[0]);
@@ -162,7 +163,11 @@ namespace CloudCoinIE.Mac.Controller
 			//            showCoins();
 			stopwatch.Stop();
 			Console.Out.WriteLine(stopwatch.Elapsed + " ms");
-			updateLog("Time to import " + detectionResults[0] + " Coins: " + stopwatch.Elapsed + "");
+            updateLog("Time to import " + detectionResults[0] + " Coins: " + stopwatch.Elapsed.ToCustomString() + "");
+			BeginInvokeOnMainThread(() =>
+			{
+				import_Click.Enabled = true;
+			});
 
 			RefreshCoins?.Invoke(this, new EventArgs());
 
@@ -175,7 +180,17 @@ namespace CloudCoinIE.Mac.Controller
 
         private void Detector_OnUpdateStatus(object sender, ProgressEventArgs e)
         {
+            updateLog(e.Status);
+            BeginInvokeOnMainThread(() =>
+            {
+                if (e.percentage > 0)
+                {
+                    importProgressBar.DoubleValue = e.percentage;
+                    lblProgress.StringValue = Convert.ToString(e.percentage) + " % completed.";
+                }
 
+
+            });
         }
 		 // Call to load from the XIB/NIB file
 		public ImportViewController() : base("ImportView", NSBundle.MainBundle)
@@ -192,10 +207,15 @@ namespace CloudCoinIE.Mac.Controller
 		public void import()
 		{
 
-			//Check RAIDA Status
+            //Check RAIDA Status
 
-			//CHECK TO SEE IF THERE ARE UN DETECTED COINS IN THE SUSPECT FOLDER
-            String[] suspectFileNames = new DirectoryInfo(fileUtils.suspectFolder).GetFiles().Select(o => o.Name).ToArray();//Get all files in suspect folder
+            //CHECK TO SEE IF THERE ARE UN DETECTED COINS IN THE SUSPECT FOLDER
+            DirectoryInfo dirJPegs = new DirectoryInfo(fileUtils.suspectFolder);
+
+            String[] suspectFileNames = new DirectoryInfo(fileUtils.suspectFolder).GetFiles("*.stack")
+                                                                                  .Union(dirJPegs.GetFiles("jpeg"))
+                                                                                  .Select(o => o.Name)
+                                                                                  .ToArray();//Get all files in suspect folder
 			if (suspectFileNames.Length > 0)
 			{
 				Console.ForegroundColor = ConsoleColor.Green;
@@ -235,7 +255,13 @@ namespace CloudCoinIE.Mac.Controller
 
         private void updateLog(String message) {
             BeginInvokeOnMainThread(() =>
-                                    txtLogs.StringValue += message + System.Environment.NewLine);
+            {
+                NSString str = new NSString(message+ System.Environment.NewLine);
+               // txtLogs.StringValue += message + System.Environment.NewLine;
+                txtImportLog.InsertText(str);
+                
+            });
+
         }
 		#endregion
 
@@ -247,5 +273,13 @@ namespace CloudCoinIE.Mac.Controller
                 return (ImportView)base.View;
             }
         }
+
     }
+	public static class MyExtensions
+	{
+		public static string ToCustomString(this TimeSpan span)
+		{
+			return string.Format("{0:00}:{1:00}:{2:00}", span.Hours, span.Minutes, span.Seconds);
+		}
+	}
 }

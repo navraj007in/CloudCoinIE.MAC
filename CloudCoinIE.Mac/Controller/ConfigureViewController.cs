@@ -15,6 +15,7 @@ namespace CloudCoinIE.Mac.Controller
         {
             Initialize();
         }
+        
 
         // Called when created directly from a XIB file
         [Export("initWithCoder:")]
@@ -22,7 +23,39 @@ namespace CloudCoinIE.Mac.Controller
         {
             Initialize();
         }
+        partial void backupClick(NSObject sender)
+        {
 
+        }
+        partial void showFolders(NSObject sender)
+        {
+           // System.Diagnostics.Process.Start("/Applications/Finder.app");
+            NSWorkspace.SharedWorkspace.SelectFile(AppDelegate.fileUtils.bankFolder, 
+                                                   AppDelegate.fileUtils.bankFolder);
+			var defaults = NSUserDefaults.StandardUserDefaults;
+			Console.WriteLine(defaults.StringForKey("workspace"));
+
+        }
+        partial void changeFolders(NSObject sender)
+        {
+			//let defaults = NSUserDefaults.standardUserDefaults()
+			//defaults.setObject("Coding Explorer", forKey: "
+
+			var dlg = NSOpenPanel.OpenPanel;
+            dlg.CanChooseFiles = false;
+			dlg.CanChooseDirectories = true;
+            dlg.AllowsMultipleSelection = false;
+            dlg.CanCreateDirectories = true;
+		
+
+            if (dlg.RunModal() == 1)
+            {
+                Console.WriteLine(dlg.Urls[0].Path);
+				var defaults = NSUserDefaults.StandardUserDefaults;
+                defaults.SetString(dlg.Urls[0].Path, "workspace");
+
+			}
+	    }
         // Call to load from the XIB/NIB file
         public ConfigureViewController() : base("ConfigureView", NSBundle.MainBundle)
         {
@@ -34,6 +67,7 @@ namespace CloudCoinIE.Mac.Controller
         {
         }
 
+       
         #endregion
 
         //strongly typed view accessor
