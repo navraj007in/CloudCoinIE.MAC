@@ -6,8 +6,8 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/bundle/AppIcon.icns</string>
-			<string>/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/actool/partial-info.plist</string>
+			<string>/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/actool/bundle/AppIcon.icns</string>
+			<string>/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

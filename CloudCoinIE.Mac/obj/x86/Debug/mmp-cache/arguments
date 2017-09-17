@@ -3,7 +3,7 @@
 /Library/Frameworks/Xamarin.Mac.framework/Versions/3.6.0.19/lib/mmp/mmp.exe \
 	/verbose \
 	/debug \
-	/output:/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/ \
+	/output:/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/bin/Debug/ \
 	"/name:CloudCoin IE" \
 	/profile:Xamarin.Mac,Version=v2.0,Profile=Mobile \
 	/arch:x86_64 \
@@ -12,18 +12,18 @@
 	/nolink \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Microsoft.CSharp.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/mscorlib.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/PCLCrypto.2.0.147/lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/PCLCrypto.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/PInvoke.BCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.BCrypt.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/PInvoke.Kernel32.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Kernel32.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/PInvoke.NCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.NCrypt.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/PInvoke.Windows.Core.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Windows.Core.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/SkiaSharp.1.59.1/lib/XamarinMac/SkiaSharp.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/PCLCrypto.2.0.147/lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/PCLCrypto.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/PInvoke.BCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.BCrypt.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/PInvoke.Kernel32.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Kernel32.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/PInvoke.NCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.NCrypt.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/PInvoke.Windows.Core.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Windows.Core.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/SkiaSharp.1.59.1/lib/XamarinMac/SkiaSharp.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/System.Core.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/System.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/System.IO.Compression.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/System.Net.Http.dll \
-	/assembly:/Users/navrajsingh/Projects/CloudCoinIE.Mac/packages/Validation.2.2.8/lib/dotnet/Validation.dll \
+	/assembly:/Users/navrajsingh/CloudCoinIE.MAC/packages/Validation.2.2.8/lib/dotnet/Validation.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Xamarin.Mac.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Facades/Microsoft.Win32.Primitives.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Facades/Microsoft.Win32.Registry.AccessControl.dll \
@@ -162,8 +162,8 @@
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Facades/System.Xml.XPath.XDocument.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Facades/System.Xml.XPath.XmlDocument.dll \
 	/assembly:/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/mono/Xamarin.Mac/Facades/System.Xml.Xsl.Primitives.dll \
-	"/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/bin/Debug/CloudCoin IE.exe" \
+	"/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/bin/Debug/CloudCoin IE.exe" \
 	/sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
-	/Users/navrajsingh/Projects/CloudCoinIE.Mac/CloudCoinIE.Mac/obj/x86/Debug/mmp-cache \
+	/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/mmp-cache \

@@ -1,19 +1,17 @@
 ﻿<Properties StartupConfiguration="{D1A5EC17-600E-4BE1-B0F3-363B09638531}|Default">
   <MonoDevelop.Ide.ItemProperties.CloudCoinIE.Mac PreferredExecutionTarget="Test1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/CloudCoin/Exporter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/Controller/ExportViewController.cs">
     <Files>
-      <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.cs" Line="169" Column="3" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Detector.cs" Line="62" Column="51" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/RAIDA.cs" Line="104" Column="1" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/CoinUtils.cs" Line="317" Column="27" />
       <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.designer.cs" Line="62" Column="1" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/FileUtils.cs" Line="116" Column="21" />
-      <File FileName="CloudCoinIE.Mac/Controller/BankViewController.cs" Line="22" Column="63" />
-      <File FileName="CloudCoinIE.Mac/Controller/ConfigureViewController.cs" Line="74" Column="24" />
-      <File FileName="CloudCoinIE.Mac/Controller/ConfigureView.cs" Line="25" Column="9" />
-      <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="24" Column="40" />
-      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="129" Column="6" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Exporter.cs" Line="22" Column="59" />
+      <File FileName="CloudCoinIE.Mac/Controller/BankViewController.cs" Line="83" Column="1" />
+      <File FileName="CloudCoinIE.Mac/Controller/ConfigureViewController.cs" Line="59" Column="29" />
+      <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="38" Column="9" />
+      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="70" Column="17" />
+      <File FileName="CloudCoinIE.Mac/CloudCoin/Exporter.cs" Line="109" Column="25" />
+      <File FileName="CloudCoinIE.Mac/Controller/EchoViewController.cs" Line="178" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

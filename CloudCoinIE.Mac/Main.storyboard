@@ -1293,16 +1293,16 @@
             </objects>
             <point key="canvasLocation" x="713" y="1285"/>
         </scene>
-        <!--Echo-->
+        <!--RAIDA-->
         <scene sceneID="Yxx-nJ-HA9">
             <objects>
-                <viewController title="Echo" id="AeY-E3-wBE" customClass="EchoViewController" sceneMemberID="viewController">
+                <viewController title="RAIDA" id="AeY-E3-wBE" customClass="EchoViewController" sceneMemberID="viewController">
                     <view key="view" id="F8R-be-hGl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50B-DY-KXr">
-                                <rect key="frame" x="199" y="413" width="76" height="17"/>
+                                <rect key="frame" x="257" y="413" width="76" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Echo RAIDA" id="FFW-UH-EAk">
                                     <font key="font" metaFont="system"/>
@@ -1311,14 +1311,14 @@
                                 </textFieldCell>
                             </textField>
                             <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="z92-Kp-AYP">
-                                <rect key="frame" x="9" y="170" width="497" height="235"/>
+                                <rect key="frame" x="9" y="100" width="571" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" ambiguous="YES" id="Oo0-1L-Vod">
-                                    <rect key="frame" x="1" y="1" width="495" height="233"/>
+                                    <rect key="frame" x="1" y="1" width="569" height="303"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-bo-t9x">
-                                            <rect key="frame" x="18" y="196" width="57" height="17"/>
+                                            <rect key="frame" x="18" y="266" width="57" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Australia" id="cTq-De-EDg">
                                                 <font key="font" metaFont="system"/>
@@ -1327,7 +1327,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbo-sV-TX6">
-                                            <rect key="frame" x="18" y="171" width="44" height="17"/>
+                                            <rect key="frame" x="18" y="241" width="44" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Russia" id="VCt-V6-FpU">
                                                 <font key="font" metaFont="system"/>
@@ -1336,7 +1336,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q23-rQ-U6t">
-                                            <rect key="frame" x="123" y="171" width="75" height="17"/>
+                                            <rect key="frame" x="130" y="241" width="75" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Switzerland" id="uQm-fK-KbX">
                                                 <font key="font" metaFont="system"/>
@@ -1345,7 +1345,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m8-9M-4at">
-                                            <rect key="frame" x="212" y="171" width="102" height="17"/>
+                                            <rect key="frame" x="245" y="241" width="102" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="United Kingdom" id="ZIr-eM-voA">
                                                 <font key="font" metaFont="system"/>
@@ -1354,7 +1354,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-iP-y9r">
-                                            <rect key="frame" x="341" y="171" width="46" height="17"/>
+                                            <rect key="frame" x="370" y="241" width="46" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Punjab" id="SD9-fS-ed3">
                                                 <font key="font" metaFont="system"/>
@@ -1363,7 +1363,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4P-Ki-BxF">
-                                            <rect key="frame" x="423" y="171" width="34" height="17"/>
+                                            <rect key="frame" x="467" y="241" width="34" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="India" id="Gxh-R5-yTe">
                                                 <font key="font" metaFont="system"/>
@@ -1372,7 +1372,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma5-fz-aq0">
-                                            <rect key="frame" x="123" y="196" width="71" height="17"/>
+                                            <rect key="frame" x="130" y="266" width="71" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Macedonia" id="Jdd-tf-E22">
                                                 <font key="font" metaFont="system"/>
@@ -1381,7 +1381,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89z-EU-m1o">
-                                            <rect key="frame" x="212" y="196" width="70" height="17"/>
+                                            <rect key="frame" x="245" y="266" width="70" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Philippines" id="WQb-Ms-PEU">
                                                 <font key="font" metaFont="system"/>
@@ -1390,7 +1390,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-AL-H69">
-                                            <rect key="frame" x="341" y="196" width="43" height="17"/>
+                                            <rect key="frame" x="370" y="266" width="43" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Serbia" id="ORX-ic-EcC">
                                                 <font key="font" metaFont="system"/>
@@ -1399,7 +1399,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTY-0E-oc3">
-                                            <rect key="frame" x="423" y="196" width="54" height="17"/>
+                                            <rect key="frame" x="467" y="266" width="54" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bulgaria" id="H7i-eu-r5z">
                                                 <font key="font" metaFont="system"/>
@@ -1408,7 +1408,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzZ-do-8p6">
-                                            <rect key="frame" x="18" y="143" width="48" height="17"/>
+                                            <rect key="frame" x="18" y="213" width="48" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Croatia" id="ph2-C0-eHA">
                                                 <font key="font" metaFont="system"/>
@@ -1417,7 +1417,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-Pe-HMu">
-                                            <rect key="frame" x="123" y="143" width="31" height="17"/>
+                                            <rect key="frame" x="130" y="213" width="31" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="USA" id="yte-eB-Mfd">
                                                 <font key="font" metaFont="system"/>
@@ -1426,7 +1426,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf3-Zo-2Hd">
-                                            <rect key="frame" x="212" y="143" width="34" height="17"/>
+                                            <rect key="frame" x="245" y="213" width="34" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="India" id="rYO-DQ-Ozh">
                                                 <font key="font" metaFont="system"/>
@@ -1435,7 +1435,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPf-iq-yPy">
-                                            <rect key="frame" x="341" y="146" width="46" height="17"/>
+                                            <rect key="frame" x="370" y="216" width="46" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Taiwan" id="Yuf-db-Guq">
                                                 <font key="font" metaFont="system"/>
@@ -1444,7 +1444,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41V-g7-tIh">
-                                            <rect key="frame" x="422" y="146" width="55" height="17"/>
+                                            <rect key="frame" x="466" y="216" width="55" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Moscow" id="0VQ-el-Hrw">
                                                 <font key="font" metaFont="system"/>
@@ -1453,7 +1453,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvC-cf-inh">
-                                            <rect key="frame" x="18" y="118" width="88" height="17"/>
+                                            <rect key="frame" x="18" y="188" width="88" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="St.Petersburg" id="iMN-GK-kNV">
                                                 <font key="font" metaFont="system"/>
@@ -1462,7 +1462,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMB-Ut-4L9">
-                                            <rect key="frame" x="123" y="118" width="61" height="17"/>
+                                            <rect key="frame" x="130" y="188" width="61" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Columbia" id="17l-20-Tv6">
                                                 <font key="font" metaFont="system"/>
@@ -1471,7 +1471,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-FN-Rfb">
-                                            <rect key="frame" x="212" y="118" width="66" height="17"/>
+                                            <rect key="frame" x="245" y="188" width="66" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Singapore" id="Jbj-LB-vK1">
                                                 <font key="font" metaFont="system"/>
@@ -1480,7 +1480,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-Ve-UaN">
-                                            <rect key="frame" x="341" y="121" width="59" height="17"/>
+                                            <rect key="frame" x="370" y="191" width="59" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Germany" id="x8g-Bj-521">
                                                 <font key="font" metaFont="system"/>
@@ -1489,7 +1489,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyt-MA-EVx">
-                                            <rect key="frame" x="422" y="121" width="50" height="17"/>
+                                            <rect key="frame" x="466" y="191" width="50" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Canada" id="eIU-Ct-b18">
                                                 <font key="font" metaFont="system"/>
@@ -1498,7 +1498,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8j-YV-4be">
-                                            <rect key="frame" x="18" y="92" width="67" height="17"/>
+                                            <rect key="frame" x="18" y="162" width="67" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Venezuela" id="NUn-9J-LVD">
                                                 <font key="font" metaFont="system"/>
@@ -1507,7 +1507,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpm-eO-bln">
-                                            <rect key="frame" x="123" y="92" width="71" height="17"/>
+                                            <rect key="frame" x="130" y="162" width="71" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hyderabad" id="hMq-0D-ERB">
                                                 <font key="font" metaFont="system"/>
@@ -1516,7 +1516,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-b9-M3N">
-                                            <rect key="frame" x="214" y="93" width="31" height="17"/>
+                                            <rect key="frame" x="247" y="163" width="31" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="USA" id="1Rf-ij-aZa">
                                                 <font key="font" metaFont="system"/>
@@ -1525,7 +1525,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3T-em-Sh8">
-                                            <rect key="frame" x="345" y="92" width="51" height="17"/>
+                                            <rect key="frame" x="374" y="162" width="51" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Ukraine" id="usy-Co-KH1">
                                                 <font key="font" metaFont="system"/>
@@ -1534,7 +1534,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP8-gx-73F">
-                                            <rect key="frame" x="423" y="96" width="69" height="17"/>
+                                            <rect key="frame" x="467" y="166" width="69" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Luxenburg" id="dVX-Mx-opU">
                                                 <font key="font" metaFont="system"/>
@@ -1543,7 +1543,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj4-Ky-1sa">
-                                            <rect key="frame" x="18" y="49" width="501" height="17"/>
+                                            <rect key="frame" x="18" y="119" width="501" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="RAIDA Health" id="yCW-vS-6XV">
                                                 <font key="font" metaFont="system"/>
@@ -1552,7 +1552,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-da-1gg">
-                                            <rect key="frame" x="181" y="6" width="137" height="32"/>
+                                            <rect key="frame" x="181" y="38" width="137" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Echo" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2e1-WU-Gry">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1577,10 +1577,12 @@
                         <outlet property="lblGermany" destination="FfG-Ve-UaN" id="2md-NI-Bef"/>
                         <outlet property="lblHealth" destination="gj4-Ky-1sa" id="hA4-LM-h0o"/>
                         <outlet property="lblHyderabad" destination="Zpm-eO-bln" id="e2b-r3-ayg"/>
-                        <outlet property="lblIndia" destination="mf3-Zo-2Hd" id="aFQ-M2-ilu"/>
+                        <outlet property="lblIndia" destination="o4P-Ki-BxF" id="3a3-5O-IEq"/>
+                        <outlet property="lblIndia2" destination="mf3-Zo-2Hd" id="typ-uc-N1Y"/>
                         <outlet property="lblLuxemberg" destination="XP8-gx-73F" id="xdo-0C-XWA"/>
-                        <outlet property="lblMacedonia" destination="89z-EU-m1o" id="Gkb-gR-GTC"/>
-                        <outlet property="lblMoscow" destination="DvC-cf-inh" id="eoP-bu-4ub"/>
+                        <outlet property="lblMacedonia" destination="Ma5-fz-aq0" id="pI5-Fq-ghn"/>
+                        <outlet property="lblMoscow" destination="41V-g7-tIh" id="pqY-Jo-RPJ"/>
+                        <outlet property="lblPhilipines" destination="89z-EU-m1o" id="pa1-l5-6XJ"/>
                         <outlet property="lblPhillipines" destination="ACO-AL-H69" id="du2-x9-3D6"/>
                         <outlet property="lblPunjab" destination="eeh-iP-y9r" id="wCm-V7-WTF"/>
                         <outlet property="lblRussia" destination="Cbo-sV-TX6" id="gvo-x9-uJP"/>
@@ -1591,7 +1593,8 @@
                         <outlet property="lblSwitzerland" destination="Q23-rQ-U6t" id="2YM-av-aq8"/>
                         <outlet property="lblTaiwan" destination="UPf-iq-yPy" id="qC5-k9-KYP"/>
                         <outlet property="lblUK" destination="1m8-9M-4at" id="hXE-eS-hQ5"/>
-                        <outlet property="lblUSA" destination="2qC-b9-M3N" id="eTB-5e-R7J"/>
+                        <outlet property="lblUSA" destination="hLt-Pe-HMu" id="stq-Km-Z1l"/>
+                        <outlet property="lblUSA2" destination="2qC-b9-M3N" id="B4S-qM-x7T"/>
                         <outlet property="lblUkraine" destination="J3T-em-Sh8" id="ELT-85-6Pj"/>
                         <outlet property="lblUnitedKingdom" destination="1m8-9M-4at" id="ecB-lk-qcX"/>
                         <outlet property="lblVenezuela" destination="S8j-YV-4be" id="Ppb-kc-01a"/>
@@ -1599,7 +1602,7 @@
                 </viewController>
                 <customObject id="mPO-Eq-67e" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-136.5" y="1902.5"/>
+            <point key="canvasLocation" x="-137" y="1902"/>
         </scene>
         <!--Configure-->
         <scene sceneID="TeS-aE-xz8">

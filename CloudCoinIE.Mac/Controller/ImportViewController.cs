@@ -135,7 +135,10 @@ namespace CloudCoinIE.Mac.Controller
 				Console.WriteLine("Hello, world");
 			}).Start();
         }
-
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+        }
 		public void detect()
 		{
 			Stopwatch stopwatch = new Stopwatch();
@@ -177,8 +180,8 @@ namespace CloudCoinIE.Mac.Controller
 			//	progressBar.Value = 100;
 			
 		}//end detect
-
-        private void Detector_OnUpdateStatus(object sender, ProgressEventArgs e)
+		
+		private void Detector_OnUpdateStatus(object sender, ProgressEventArgs e)
         {
             updateLog(e.Status);
             BeginInvokeOnMainThread(() =>

@@ -58,10 +58,10 @@ namespace CloudCoinIE.Mac.Controller
                 stepperQtrs.MaxValue = qtrsTotal;
                 stepperHundreds.MaxValue = hundredsTotal;
                 stepperTwoFifties.MaxValue = TwoFiftiesTotal;
-				stepperFives.MaxValue = 5;
-				stepperQtrs.MaxValue = 25;
-				stepperHundreds.MaxValue = 100;
-				stepperTwoFifties.MaxValue = 250;
+				//stepperFives.MaxValue = 5;
+				//stepperQtrs.MaxValue = 25;
+				//stepperHundreds.MaxValue = 100;
+				//stepperTwoFifties.MaxValue = 250;
 
 				countOnes.StringValue = Convert.ToString( 0);
                 countFives.StringValue = Convert.ToString(0);
@@ -73,9 +73,18 @@ namespace CloudCoinIE.Mac.Controller
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            showCoins();
+            countOnes.Enabled = false;
+            countFives.Enabled = false;
+            countQtrs.Enabled = false;
+            countHundreds.Enabled = false;
+            countTwoFifties.Enabled = false;
+
       
         }
+        public override void ViewDidAppear() {
+			showCoins();
+
+		}
 		public void export()
 		{
             FileUtils fileUtils = AppDelegate.fileUtils;

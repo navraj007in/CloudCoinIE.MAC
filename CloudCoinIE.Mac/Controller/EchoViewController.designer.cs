@@ -55,7 +55,7 @@ namespace CloudCoinIE.Mac.Controller
 		AppKit.NSTextField lblMoscow { get; set; }
 
 		[Outlet]
-		AppKit.NSTextField lblPhillipines { get; set; }
+		AppKit.NSTextField lblPhilipines { get; set; }
 
 		[Outlet]
 		AppKit.NSTextField lblPunjab { get; set; }
@@ -98,129 +98,9 @@ namespace CloudCoinIE.Mac.Controller
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (lblHealth != null) {
-				lblHealth.Dispose ();
-				lblHealth = null;
-			}
-
-			if (lblLuxemberg != null) {
-				lblLuxemberg.Dispose ();
-				lblLuxemberg = null;
-			}
-
-			if (lblUkraine != null) {
-				lblUkraine.Dispose ();
-				lblUkraine = null;
-			}
-
-			if (lblUSA2 != null) {
-				lblUSA2.Dispose ();
-				lblUSA2 = null;
-			}
-
-			if (lblHyderabad != null) {
-				lblHyderabad.Dispose ();
-				lblHyderabad = null;
-			}
-
-			if (lblVenezuela != null) {
-				lblVenezuela.Dispose ();
-				lblVenezuela = null;
-			}
-
-			if (lblCanada != null) {
-				lblCanada.Dispose ();
-				lblCanada = null;
-			}
-
-			if (lblGermany != null) {
-				lblGermany.Dispose ();
-				lblGermany = null;
-			}
-
-			if (lblSingapore != null) {
-				lblSingapore.Dispose ();
-				lblSingapore = null;
-			}
-
-			if (lblColumbia != null) {
-				lblColumbia.Dispose ();
-				lblColumbia = null;
-			}
-
-			if (lblStPetersberg != null) {
-				lblStPetersberg.Dispose ();
-				lblStPetersberg = null;
-			}
-
-			if (lblMoscow != null) {
-				lblMoscow.Dispose ();
-				lblMoscow = null;
-			}
-
-			if (lblTaiwan != null) {
-				lblTaiwan.Dispose ();
-				lblTaiwan = null;
-			}
-
-			if (lblIndia2 != null) {
-				lblIndia2.Dispose ();
-				lblIndia2 = null;
-			}
-
-			if (lblUSA != null) {
-				lblUSA.Dispose ();
-				lblUSA = null;
-			}
-
-			if (lblCroatia != null) {
-				lblCroatia.Dispose ();
-				lblCroatia = null;
-			}
-
-			if (lblIndia != null) {
-				lblIndia.Dispose ();
-				lblIndia = null;
-			}
-
-			if (lblPunjab != null) {
-				lblPunjab.Dispose ();
-				lblPunjab = null;
-			}
-
-			if (lblUnitedKingdom != null) {
-				lblUnitedKingdom.Dispose ();
-				lblUnitedKingdom = null;
-			}
-
-			if (lblSwitzerland != null) {
-				lblSwitzerland.Dispose ();
-				lblSwitzerland = null;
-			}
-
-			if (lblRussia != null) {
-				lblRussia.Dispose ();
-				lblRussia = null;
-			}
-
-			if (lblBulgaria != null) {
-				lblBulgaria.Dispose ();
-				lblBulgaria = null;
-			}
-
-			if (lblSerbia != null) {
-				lblSerbia.Dispose ();
-				lblSerbia = null;
-			}
-
-			if (lblPhillipines != null) {
-				lblPhillipines.Dispose ();
-				lblPhillipines = null;
-			}
-
-			if (lblMacedonia != null) {
-				lblMacedonia.Dispose ();
-				lblMacedonia = null;
+			if (cmdEcho != null) {
+				cmdEcho.Dispose ();
+				cmdEcho = null;
 			}
 
 			if (lblAustralia != null) {
@@ -228,9 +108,129 @@ namespace CloudCoinIE.Mac.Controller
 				lblAustralia = null;
 			}
 
-			if (cmdEcho != null) {
-				cmdEcho.Dispose ();
-				cmdEcho = null;
+			if (lblBulgaria != null) {
+				lblBulgaria.Dispose ();
+				lblBulgaria = null;
+			}
+
+			if (lblCanada != null) {
+				lblCanada.Dispose ();
+				lblCanada = null;
+			}
+
+			if (lblColumbia != null) {
+				lblColumbia.Dispose ();
+				lblColumbia = null;
+			}
+
+			if (lblCroatia != null) {
+				lblCroatia.Dispose ();
+				lblCroatia = null;
+			}
+
+			if (lblGermany != null) {
+				lblGermany.Dispose ();
+				lblGermany = null;
+			}
+
+			if (lblHealth != null) {
+				lblHealth.Dispose ();
+				lblHealth = null;
+			}
+
+			if (lblHyderabad != null) {
+				lblHyderabad.Dispose ();
+				lblHyderabad = null;
+			}
+
+			if (lblIndia != null) {
+				lblIndia.Dispose ();
+				lblIndia = null;
+			}
+
+			if (lblIndia2 != null) {
+				lblIndia2.Dispose ();
+				lblIndia2 = null;
+			}
+
+			if (lblLuxemberg != null) {
+				lblLuxemberg.Dispose ();
+				lblLuxemberg = null;
+			}
+
+			if (lblMacedonia != null) {
+				lblMacedonia.Dispose ();
+				lblMacedonia = null;
+			}
+
+			if (lblMoscow != null) {
+				lblMoscow.Dispose ();
+				lblMoscow = null;
+			}
+
+			if (lblPhilipines != null) {
+				lblPhilipines.Dispose ();
+				lblPhilipines = null;
+			}
+
+			if (lblPunjab != null) {
+				lblPunjab.Dispose ();
+				lblPunjab = null;
+			}
+
+			if (lblRussia != null) {
+				lblRussia.Dispose ();
+				lblRussia = null;
+			}
+
+			if (lblSerbia != null) {
+				lblSerbia.Dispose ();
+				lblSerbia = null;
+			}
+
+			if (lblSingapore != null) {
+				lblSingapore.Dispose ();
+				lblSingapore = null;
+			}
+
+			if (lblStPetersberg != null) {
+				lblStPetersberg.Dispose ();
+				lblStPetersberg = null;
+			}
+
+			if (lblSwitzerland != null) {
+				lblSwitzerland.Dispose ();
+				lblSwitzerland = null;
+			}
+
+			if (lblTaiwan != null) {
+				lblTaiwan.Dispose ();
+				lblTaiwan = null;
+			}
+
+			if (lblUkraine != null) {
+				lblUkraine.Dispose ();
+				lblUkraine = null;
+			}
+
+			if (lblUnitedKingdom != null) {
+				lblUnitedKingdom.Dispose ();
+				lblUnitedKingdom = null;
+			}
+
+			if (lblUSA != null) {
+				lblUSA.Dispose ();
+				lblUSA = null;
+			}
+
+			if (lblUSA2 != null) {
+				lblUSA2.Dispose ();
+				lblUSA2 = null;
+			}
+
+			if (lblVenezuela != null) {
+				lblVenezuela.Dispose ();
+				lblVenezuela = null;
 			}
 		}
 	}

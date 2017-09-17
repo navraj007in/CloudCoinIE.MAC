@@ -36,12 +36,59 @@ namespace CloudCoinIE.Mac.Controller
         {
            // showCoins();
         }
+		public bool echoRaida()
+		{
+
+			RAIDA_Status.resetEcho();
+			RAIDA raida1 = new RAIDA(5000);
+			Response[] results = raida1.echoAll(5000);
+			int totalReady = 0;
+			Console.Out.WriteLine("");
+			//For every RAIDA check its results
+
+			Console.Out.WriteLine();
+
+			totalReady = RAIDA_Status.failsEcho.Where(c => c).Count();
+
+
+			Console.ForegroundColor = ConsoleColor.White;
+			Console.Out.WriteLine("");
+			Console.Out.WriteLine("");
+			Console.Out.Write("  RAIDA Health: " + totalReady + " / 25: ");//"RAIDA Health: " + totalReady );
+																		   //lblHealth.Text = "  RAIDA Health: " + totalReady + " / 25: ";
+
+			// Running on the UI thread
+
+			//Check if enough are good 
+			if (totalReady < 16)//
+			{
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.Out.WriteLine("  Not enough RAIDA servers can be contacted to import new coins.");// );
+				Console.Out.WriteLine("  Is your device connected to the Internet?");// );
+				Console.Out.WriteLine("  Is a router blocking your connection?");// );
+				Console.ForegroundColor = ConsoleColor.White;
+
+				return false;
+			}
+			else
+			{
+				Console.ForegroundColor = ConsoleColor.Green;
+				Console.Out.WriteLine("The RAIDA is ready for counterfeit detection.");// );
+				Console.ForegroundColor = ConsoleColor.White;
+				return true;
+			}//end if enough RAIDA
+		}//End echo
+
+        public override void ViewDidAppear() {
+            showCoins();
+        }
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
 			this.Title = "CloudCoin IE";
 
             showCoins();
+            echoRaida();
 			// Do any additional setup after loading the view.
 		}
 		public void showCoins()

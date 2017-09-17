@@ -52,11 +52,12 @@ namespace CloudCoinIE.Mac.Controller
 			raidas[1] = lblMacedonia;
 
 		}
+
         partial void echoRAIDA(NSObject sender)
         {
 			raidas[0] = lblAustralia;
 			raidas[1] = lblMacedonia;
-			raidas[2] = lblPhillipines;
+            raidas[2] = lblPhilipines;
 			raidas[3] = lblSerbia;
 			raidas[4] = lblBulgaria;
 			raidas[5] = lblRussia;
@@ -132,7 +133,7 @@ namespace CloudCoinIE.Mac.Controller
             totalReady = RAIDA_Status.failsEcho.Where(c => c).Count();
             lblAustralia.TextColor = RAIDA_Status.failsEcho[0] ? NSColor.Green : NSColor.Red;
             lblMacedonia.TextColor = RAIDA_Status.failsEcho[1] ? NSColor.Green : NSColor.Red;
-            lblPhillipines.TextColor = RAIDA_Status.failsEcho[2] ? NSColor.Green : NSColor.Red;
+            lblPhilipines.TextColor = RAIDA_Status.failsEcho[2] ? NSColor.Green : NSColor.Red;
             lblSerbia.TextColor = RAIDA_Status.failsEcho[3] ? NSColor.Green : NSColor.Red;
             lblBulgaria.TextColor = RAIDA_Status.failsEcho[4] ? NSColor.Green : NSColor.Red;
 			lblRussia.TextColor = RAIDA_Status.failsEcho[5] ? NSColor.Green : NSColor.Red;
@@ -144,7 +145,7 @@ namespace CloudCoinIE.Mac.Controller
 			lblIndia.TextColor = RAIDA_Status.failsEcho[9] ? NSColor.Green : NSColor.Red;
 			lblCroatia.TextColor = RAIDA_Status.failsEcho[10] ? NSColor.Green : NSColor.Red;
 			lblUSA.TextColor = RAIDA_Status.failsEcho[11] ? NSColor.Green : NSColor.Red;
-			//lblIndia2.TextColor = RAIDA_Status.failsEcho[12] ? NSColor.Green : NSColor.Red;
+			lblIndia2.TextColor = RAIDA_Status.failsEcho[12] ? NSColor.Green : NSColor.Red;
 			lblTaiwan.TextColor = RAIDA_Status.failsEcho[13] ? NSColor.Green : NSColor.Red;
 			lblMoscow.TextColor = RAIDA_Status.failsEcho[14] ? NSColor.Green : NSColor.Red;
             lblStPetersberg.TextColor = RAIDA_Status.failsEcho[15] ? NSColor.Green : NSColor.Red;
@@ -154,7 +155,7 @@ namespace CloudCoinIE.Mac.Controller
 			lblCanada.TextColor = RAIDA_Status.failsEcho[19] ? NSColor.Green : NSColor.Red;
 			lblVenezuela.TextColor = RAIDA_Status.failsEcho[20] ? NSColor.Green : NSColor.Red;
 			lblHyderabad.TextColor = RAIDA_Status.failsEcho[21] ? NSColor.Green : NSColor.Red;
-			//lblUSA2.TextColor = RAIDA_Status.failsEcho[22] ? NSColor.Green : NSColor.Red;
+			lblUSA2.TextColor = RAIDA_Status.failsEcho[22] ? NSColor.Green : NSColor.Red;
 			lblUkraine.TextColor = RAIDA_Status.failsEcho[23] ? NSColor.Green : NSColor.Red;
 			lblLuxemberg.TextColor = RAIDA_Status.failsEcho[24] ? NSColor.Green : NSColor.Red;
 			
