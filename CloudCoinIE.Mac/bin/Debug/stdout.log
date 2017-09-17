@@ -6,20 +6,24 @@
   RAIDA Health: 25 / 25: The RAIDA is ready for counterfeit detection.
 
 .........................  Do you want to export your CloudCoin to (1)jpgs or (2) stack (JSON) file?
-Writing to : 
-Writing to : /Users/navrajsingh/CloudCoin/Export//2.CloudCoins.testexport.stack
-/Users/navrajsingh/CloudCoin/Export//2.CloudCoins.testexport.stack
+Writing to /Users/navrajsingh/CloudCoin/Export/1.CloudCoin.1.1069655..jpg
+Writing to /Users/navrajsingh/CloudCoin/Export/1.CloudCoin.1.1069655..jpg
+Writing to /Users/navrajsingh/CloudCoin/Export/1.CloudCoin.1.1069658..jpg
+Writing to /Users/navrajsingh/CloudCoin/Export/1.CloudCoin.1.1069658..jpg
   Exporting CloudCoins Completed.
 
-
-
-/Users/navrajsingh/CloudCoin/Export/2.CloudCoins.testexport.stack
+/Users/navrajsingh/CloudCoin/Export/1.CloudCoin.1.1069655..jpg
+/Users/navrajsingh/CloudCoin/Export/1.CloudCoin.1.1069658..jpg
 
   Loading all CloudCoins in your import folder: 
 /Users/navrajsingh/CloudCoin/Import/
 Importing the following files: 
-2.CloudCoins.testexport.stack
-2.CloudCoins.testexport.stack
+1.CloudCoin.1.1069655..jpg
+1.CloudCoin.1.1069655..jpg
+Trying to load: /Users/navrajsingh/CloudCoin/Import/1.CloudCoin.1.1069655..jpg
+1.CloudCoin.1.1069658..jpg
+1.CloudCoin.1.1069658..jpg
+Trying to load: /Users/navrajsingh/CloudCoin/Import/1.CloudCoin.1.1069658..jpg
 
   Detecting Authentication of Suspect Coins
 Now scanning coin 1 of 2 for counterfeit. SN 10,69,655, Denomination: 1
@@ -85,7 +89,8 @@ pass
   Total imported to bank: 2
   Total Counterfeit: 0
   Total Kept in suspect folder: 0
-00:00:06.4627262 ms
+00:00:05.3203584 ms
 Hello, world
+
 
 

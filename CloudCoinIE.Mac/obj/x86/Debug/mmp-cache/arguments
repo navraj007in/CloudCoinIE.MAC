@@ -1,6 +1,6 @@
-# Version: 3.6.0.19 (d15-3: 80b8487d)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.Mac.framework/Versions/3.6.0.19/lib/mmp/mmp.exe
-/Library/Frameworks/Xamarin.Mac.framework/Versions/3.6.0.19/lib/mmp/mmp.exe \
+# Version: 3.6.3.3 (d15-3: 8a391069)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.Mac.framework/Versions/3.6.3.3/lib/mmp/mmp.exe
+/Library/Frameworks/Xamarin.Mac.framework/Versions/3.6.3.3/lib/mmp/mmp.exe \
 	/verbose \
 	/debug \
 	/output:/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/bin/Debug/ \

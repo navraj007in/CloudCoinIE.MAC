@@ -13,6 +13,9 @@ namespace CloudCoinIE.Mac.Controller
 	partial class ExportViewController
 	{
 		[Outlet]
+		AppKit.NSComboBox cboExportType { get; set; }
+
+		[Outlet]
 		AppKit.NSTextField countFives { get; set; }
 
 		[Outlet]
@@ -98,39 +101,14 @@ namespace CloudCoinIE.Mac.Controller
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (lblHeader != null) {
-				lblHeader.Dispose ();
-				lblHeader = null;
-			}
-
-			if (lblTwoFiftiesTotal != null) {
-				lblTwoFiftiesTotal.Dispose ();
-				lblTwoFiftiesTotal = null;
-			}
-
-			if (lblHundredsTotal != null) {
-				lblHundredsTotal.Dispose ();
-				lblHundredsTotal = null;
-			}
-
-			if (lblQtrsTotal != null) {
-				lblQtrsTotal.Dispose ();
-				lblQtrsTotal = null;
-			}
-
-			if (lblFivesTotal != null) {
-				lblFivesTotal.Dispose ();
-				lblFivesTotal = null;
-			}
-
-			if (lblOnesTotal != null) {
-				lblOnesTotal.Dispose ();
-				lblOnesTotal = null;
-			}
-
 			if (countFives != null) {
 				countFives.Dispose ();
 				countFives = null;
+			}
+
+			if (countHundreds != null) {
+				countHundreds.Dispose ();
+				countHundreds = null;
 			}
 
 			if (countOnes != null) {
@@ -143,39 +121,44 @@ namespace CloudCoinIE.Mac.Controller
 				countQtrs = null;
 			}
 
-			if (countHundreds != null) {
-				countHundreds.Dispose ();
-				countHundreds = null;
-			}
-
 			if (countTwoFifties != null) {
 				countTwoFifties.Dispose ();
 				countTwoFifties = null;
 			}
 
-			if (stepperOnes != null) {
-				stepperOnes.Dispose ();
-				stepperOnes = null;
+			if (lblFivesTotal != null) {
+				lblFivesTotal.Dispose ();
+				lblFivesTotal = null;
 			}
 
-			if (stepperFives != null) {
-				stepperFives.Dispose ();
-				stepperFives = null;
+			if (lblHeader != null) {
+				lblHeader.Dispose ();
+				lblHeader = null;
 			}
 
-			if (stepperQtrs != null) {
-				stepperQtrs.Dispose ();
-				stepperQtrs = null;
+			if (lblHundredsTotal != null) {
+				lblHundredsTotal.Dispose ();
+				lblHundredsTotal = null;
 			}
 
-			if (stepperHundreds != null) {
-				stepperHundreds.Dispose ();
-				stepperHundreds = null;
+			if (lblOnesTotal != null) {
+				lblOnesTotal.Dispose ();
+				lblOnesTotal = null;
 			}
 
-			if (stepperTwoFifties != null) {
-				stepperTwoFifties.Dispose ();
-				stepperTwoFifties = null;
+			if (lblQtrsTotal != null) {
+				lblQtrsTotal.Dispose ();
+				lblQtrsTotal = null;
+			}
+
+			if (lblTwoFiftiesTotal != null) {
+				lblTwoFiftiesTotal.Dispose ();
+				lblTwoFiftiesTotal = null;
+			}
+
+			if (rdbJpeg != null) {
+				rdbJpeg.Dispose ();
+				rdbJpeg = null;
 			}
 
 			if (rdbStack != null) {
@@ -183,9 +166,34 @@ namespace CloudCoinIE.Mac.Controller
 				rdbStack = null;
 			}
 
-			if (rdbJpeg != null) {
-				rdbJpeg.Dispose ();
-				rdbJpeg = null;
+			if (stepperFives != null) {
+				stepperFives.Dispose ();
+				stepperFives = null;
+			}
+
+			if (stepperHundreds != null) {
+				stepperHundreds.Dispose ();
+				stepperHundreds = null;
+			}
+
+			if (stepperOnes != null) {
+				stepperOnes.Dispose ();
+				stepperOnes = null;
+			}
+
+			if (stepperQtrs != null) {
+				stepperQtrs.Dispose ();
+				stepperQtrs = null;
+			}
+
+			if (stepperTwoFifties != null) {
+				stepperTwoFifties.Dispose ();
+				stepperTwoFifties = null;
+			}
+
+			if (cboExportType != null) {
+				cboExportType.Dispose ();
+				cboExportType = null;
 			}
 
 			if (txtTag != null) {

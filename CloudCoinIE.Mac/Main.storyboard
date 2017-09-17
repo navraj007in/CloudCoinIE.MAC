@@ -937,44 +937,35 @@
                                                 <action selector="exportClicked:" target="0m0-XQ-6kp" id="R5e-rn-yId"/>
                                             </connections>
                                         </button>
-                                        <box fixedFrame="YES" title="Export Type" translatesAutoresizingMaskIntoConstraints="NO" id="fvl-Lx-SUR">
-                                            <rect key="frame" x="60" y="74" width="238" height="54"/>
+                                        <comboBox verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjt-no-JRX">
+                                            <rect key="frame" x="157" y="83" width="97" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <view key="contentView" id="2of-P6-jgt">
-                                                <rect key="frame" x="2" y="2" width="234" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPe-uu-2u6">
-                                                        <rect key="frame" x="112" y="10" width="57" height="18"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <buttonCell key="cell" type="radio" title="Stack" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="pMe-Lt-5g5">
-                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                            <font key="font" metaFont="system"/>
-                                                        </buttonCell>
-                                                        <connections>
-                                                            <action selector="stackClicked:" target="0m0-XQ-6kp" id="b3M-dg-uxU"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </view>
-                                        </box>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loh-nn-8P7">
-                                            <rect key="frame" x="75" y="87" width="59" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="radio" title="Jpegs" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="yWG-i5-xWs">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Jpeg" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="Q6n-fB-sOm">
                                                 <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <action selector="jpegClick:" target="0m0-XQ-6kp" id="xS4-vZ-Sqf"/>
-                                            </connections>
-                                        </button>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <objectValues>
+                                                    <string>Stack</string>
+                                                    <string>Jpeg</string>
+                                                </objectValues>
+                                            </comboBoxCell>
+                                        </comboBox>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyu-AK-Qy1">
+                                            <rect key="frame" x="27" y="90" width="63" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Export As" id="VaD-SR-RDi">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </box>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="cboExportType" destination="pjt-no-JRX" id="bSw-94-tKl"/>
                         <outlet property="countFives" destination="g7G-2C-70N" id="K6o-Wg-yIz"/>
                         <outlet property="countHundreds" destination="YOy-nD-Ngo" id="Y0X-QE-6JZ"/>
                         <outlet property="countOnes" destination="ZEV-Mp-bsn" id="E4x-F6-WFy"/>
@@ -990,8 +981,6 @@
                         <outlet property="lblTwoFiftiesTotal" destination="R5l-yQ-ubS" id="2w7-Gl-oBg"/>
                         <outlet property="onesTotal" destination="XVK-2K-Pca" id="zQq-T7-Rhc"/>
                         <outlet property="qtrsTotal" destination="Fsx-tU-adj" id="I5S-QS-fFS"/>
-                        <outlet property="rdbJpeg" destination="loh-nn-8P7" id="64a-gd-y0V"/>
-                        <outlet property="rdbStack" destination="EPe-uu-2u6" id="Z40-X1-4CP"/>
                         <outlet property="stepperFives" destination="meM-sq-5aW" id="ftG-dV-fuv"/>
                         <outlet property="stepperHundreds" destination="GQu-T6-1vr" id="92u-ug-Z2h"/>
                         <outlet property="stepperOnes" destination="qfH-PU-fNg" id="PRF-30-Y1W"/>

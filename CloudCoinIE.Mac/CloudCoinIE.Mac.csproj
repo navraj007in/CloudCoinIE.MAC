@@ -94,6 +94,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Controller\" />
     <Folder Include="CloudCoin\" />
+    <Folder Include="Templates\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -186,6 +187,13 @@
     <InterfaceDefinition Include="Controller\EchoView.xib" />
     <InterfaceDefinition Include="Controller\ExportView.xib" />
     <InterfaceDefinition Include="Controller\ConfigureView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Templates\jpeg1.jpg" />
+    <BundleResource Include="Templates\jpeg5.jpg" />
+    <BundleResource Include="Templates\jpeg25.jpg" />
+    <BundleResource Include="Templates\jpeg100.jpg" />
+    <BundleResource Include="Templates\jpeg250.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

@@ -88,12 +88,14 @@ namespace CloudCoinIE.Mac.Controller
 		public void export()
 		{
             FileUtils fileUtils = AppDelegate.fileUtils;
-            if (rdbStack.IntValue == 1)
-				exportJpegStack = 1;
-			else
-				exportJpegStack = 2;
+
 
             exportJpegStack = 2;
+            if (cboExportType.StringValue == "Stack")
+                exportJpegStack = 2;
+            else
+                exportJpegStack = 1;
+            
 			Banker bank = new Banker(fileUtils);
 			int[] bankTotals = bank.countCoins(fileUtils.bankFolder);
 			int[] frackedTotals = bank.countCoins(fileUtils.frackedFolder);

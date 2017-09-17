@@ -1,15 +1,15 @@
-2017-09-18 00:16:53.309 CloudCoin IE[30641:1064098] Failed to connect (fivesTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:16:53.309 CloudCoin IE[30641:1064098] Failed to connect (hundredsTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:16:53.310 CloudCoin IE[30641:1064098] Failed to connect (onesTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:16:53.310 CloudCoin IE[30641:1064098] Failed to connect (qtrsTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:16:53.391 CloudCoin IE[30641:1064098] Failed to connect (twiFiftyClicked) outlet from (ExportViewController) to (NSStepper): missing setter or instance variable
-2017-09-18 00:16:53.391 CloudCoin IE[30641:1064098] Failed to connect (twoFiftiesTotal) outlet from (ExportViewController) to (NSTextFieldCell): missing setter or instance variable
-2017-09-18 00:16:53.391 CloudCoin IE[30641:1064098] Failed to connect (twoHundredsTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:17:38.059 CloudCoin IE[30641:1064098] Failed to connect (lblPhillipines) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:17:38.059 CloudCoin IE[30641:1064098] Failed to connect (lblSerbi) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:17:38.060 CloudCoin IE[30641:1064098] Failed to connect (lblUK) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
-2017-09-18 00:17:39.983 CloudCoin IE[30641:1064098] Failed to connect (Click_Import) outlet from (ImportViewController) to (NSButton): missing setter or instance variable
-2017-09-18 00:18:22.866 CloudCoin IE[30641:1064098] Failed to connect (BackupClick) outlet from (ConfigureViewController) to (NSButton): missing setter or instance variable
-2017-09-18 00:18:22.866 CloudCoin IE[30641:1064098] Failed to connect (ChangeWorkspaceClick) outlet from (ConfigureViewController) to (NSButton): missing setter or instance variable
-2017-09-18 00:18:22.866 CloudCoin IE[30641:1064098] Failed to connect (ShowFoldersClick) outlet from (ConfigureViewController) to (NSButton): missing setter or instance variable
-2017-09-18 00:18:39.972 CloudCoin IE[30641:1064129] error: * Assertion at /Users/builder/data/lanes/4991/80b8487d/source/xamarin-macios/external/mono/mono/mini/debugger-agent.c:3957, condition `tls' not met
+2017-09-18 00:49:34.608 CloudCoin IE[1498:23244] Failed to connect (fivesTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:49:34.608 CloudCoin IE[1498:23244] Failed to connect (hundredsTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:49:34.609 CloudCoin IE[1498:23244] Failed to connect (onesTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:49:34.609 CloudCoin IE[1498:23244] Failed to connect (qtrsTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:49:34.633 CloudCoin IE[1498:23244] Failed to connect (twiFiftyClicked) outlet from (ExportViewController) to (NSStepper): missing setter or instance variable
+2017-09-18 00:49:34.633 CloudCoin IE[1498:23244] Failed to connect (twoFiftiesTotal) outlet from (ExportViewController) to (NSTextFieldCell): missing setter or instance variable
+2017-09-18 00:49:34.633 CloudCoin IE[1498:23244] Failed to connect (twoHundredsTotal) outlet from (ExportViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:50:18.398 CloudCoin IE[1498:23244] Failed to connect (Click_Import) outlet from (ImportViewController) to (NSButton): missing setter or instance variable
+2017-09-18 00:50:35.642 CloudCoin IE[1498:23244] Failed to connect (lblPhillipines) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:50:35.643 CloudCoin IE[1498:23244] Failed to connect (lblSerbi) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:50:35.644 CloudCoin IE[1498:23244] Failed to connect (lblUK) outlet from (EchoViewController) to (NSTextField): missing setter or instance variable
+2017-09-18 00:50:36.322 CloudCoin IE[1498:23244] Failed to connect (BackupClick) outlet from (ConfigureViewController) to (NSButton): missing setter or instance variable
+2017-09-18 00:50:36.322 CloudCoin IE[1498:23244] Failed to connect (ChangeWorkspaceClick) outlet from (ConfigureViewController) to (NSButton): missing setter or instance variable
+2017-09-18 00:50:36.322 CloudCoin IE[1498:23244] Failed to connect (ShowFoldersClick) outlet from (ConfigureViewController) to (NSButton): missing setter or instance variable
+2017-09-18 00:50:48.868 CloudCoin IE[1498:23279] error: * Assertion at /Users/builder/data/lanes/4991/8a391069/source/xamarin-macios/external/mono/mono/mini/debugger-agent.c:3957, condition `tls' not met

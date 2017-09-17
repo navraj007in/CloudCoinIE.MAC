@@ -9,7 +9,7 @@
       <File FileName="CloudCoinIE.Mac/Controller/BankViewController.cs" Line="83" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/ConfigureViewController.cs" Line="59" Column="29" />
       <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="38" Column="9" />
-      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="70" Column="17" />
+      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="96" Column="17" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/Exporter.cs" Line="109" Column="25" />
       <File FileName="CloudCoinIE.Mac/Controller/EchoViewController.cs" Line="178" Column="5" />
     </Files>
