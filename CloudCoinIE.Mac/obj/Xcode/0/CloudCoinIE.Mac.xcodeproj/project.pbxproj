@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32CE46E60000000000000000 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC2DAA0000000000000000 /* Cocoa.framework */; };
+		6B82D1FF0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F060220000000000000000 /* Foundation.framework */; };
+		801409D20000000000000000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D67FB320000000000000000 /* Assets.xcassets */; };
+		F8F1F0960000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1645E1F60000000000000000 /* Info.plist */; };
+		71CFD75A0000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F23C8BA0000000000000000 /* Entitlements.plist */; };
+		EAADBE1E0000000000000000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801AF7E00000000000000000 /* Main.storyboard */; };
+		638BA4E20000000000000000 /* Echo.xib in Resources */ = {isa = PBXBuildFile; fileRef = B924D3B20000000000000000 /* Echo.xib */; };
+		DC698BA60000000000000000 /* BankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3202BA760000000000000000 /* BankView.xib */; };
+		5547726A0000000000000000 /* ImportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE0A13A0000000000000000 /* ImportView.xib */; };
+		CE25592E0000000000000000 /* EchoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BE87FE0000000000000000 /* EchoView.xib */; };
+		47033FF20000000000000000 /* ExportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9C6EC20000000000000000 /* ExportView.xib */; };
+		BFE126B60000000000000000 /* ConfigureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157A55860000000000000000 /* ConfigureView.xib */; };
+		38BF0D7A0000000000000000 /* ConfigureViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 80DF96420000000000000000 /* ConfigureViewController.h */; };
+		B19CF43E0000000000000000 /* ConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0234FA0000000000000000 /* ConfigureViewController.m */; };
+		2A7ADB020000000000000000 /* ConfigureView.h in Sources */ = {isa = PBXBuildFile; fileRef = F9BD7D060000000000000000 /* ConfigureView.h */; };
+		A358C1C60000000000000000 /* ConfigureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E01BBE0000000000000000 /* ConfigureView.m */; };
+		1C36A88A0000000000000000 /* ExportViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 729B63CA0000000000000000 /* ExportViewController.h */; };
+		95148F4E0000000000000000 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE028200000000000000000 /* ExportViewController.m */; };
+		DF2761200000000000000000 /* ExportView.h in Sources */ = {isa = PBXBuildFile; fileRef = EB794A8E0000000000000000 /* ExportView.h */; };
+		86D05CD60000000000000000 /* ExportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 879BE9460000000000000000 /* ExportView.m */; };
+		FFAE439A0000000000000000 /* EchoViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 645731520000000000000000 /* EchoViewController.h */; };
+		788C2A5E0000000000000000 /* EchoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D00A000000000000000000 /* EchoViewController.m */; };
+		F16A11220000000000000000 /* EchoView.h in Sources */ = {isa = PBXBuildFile; fileRef = DD3518160000000000000000 /* EchoView.h */; };
+		6A47F7E60000000000000000 /* EchoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957B6CE0000000000000000 /* EchoView.m */; };
+		E325DEAA0000000000000000 /* ImportViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 5612FEDA0000000000000000 /* ImportViewController.h */; };
+		5C03C56E0000000000000000 /* ImportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2359D920000000000000000 /* ImportViewController.m */; };
+		D4E1AC320000000000000000 /* ImportView.h in Sources */ = {isa = PBXBuildFile; fileRef = CEF0E59E0000000000000000 /* ImportView.h */; };
+		4DBF92F60000000000000000 /* ImportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1384560000000000000000 /* ImportView.m */; };
+		C69D79BA0000000000000000 /* BankViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 47CECC620000000000000000 /* BankViewController.h */; };
+		3F7B607E0000000000000000 /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F16B1A0000000000000000 /* BankViewController.m */; };
+		B85947420000000000000000 /* BankView.h in Sources */ = {isa = PBXBuildFile; fileRef = C0ACB3260000000000000000 /* BankView.h */; };
+		31372E060000000000000000 /* BankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCF51DE0000000000000000 /* BankView.m */; };
+		AA1514CA0000000000000000 /* EchoController.h in Sources */ = {isa = PBXBuildFile; fileRef = 398A99EA0000000000000000 /* EchoController.h */; };
+		22F2FB8E0000000000000000 /* EchoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD38A20000000000000000 /* EchoController.m */; };
+		9BD0E2520000000000000000 /* Echo.h in Sources */ = {isa = PBXBuildFile; fileRef = B26880AE0000000000000000 /* Echo.h */; };
+		14AEC9160000000000000000 /* Echo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B1F660000000000000000 /* Echo.m */; };
+		8D8CAFDA0000000000000000 /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 2B4667720000000000000000 /* ViewController.h */; };
+		66A969E00000000000000000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C769062A0000000000000000 /* ViewController.m */; };
+		7F487D620000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = A4244E360000000000000000 /* AppDelegate.h */; };
+		F82664260000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4046ECEE0000000000000000 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		248A146E0000000000000000 /* CloudCoinIE.Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "CloudCoinIE.Mac.app"; path = "CloudCoinIE.Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAC2DAA0000000000000000 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = SDKROOT; };
+		B9F060220000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		9D67FB320000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		1645E1F60000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		8F23C8BA0000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		801AF7E00000000000000000 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Main.storyboard"; path = "Main.storyboard"; sourceTree = "<group>"; };
+		B924D3B20000000000000000 /* Echo.xib */ = {isa = PBXFileReference; name = "Echo.xib"; path = "Controller/Echo.xib"; sourceTree = "<group>"; };
+		3202BA760000000000000000 /* BankView.xib */ = {isa = PBXFileReference; name = "BankView.xib"; path = "Controller/BankView.xib"; sourceTree = "<group>"; };
+		AAE0A13A0000000000000000 /* ImportView.xib */ = {isa = PBXFileReference; name = "ImportView.xib"; path = "Controller/ImportView.xib"; sourceTree = "<group>"; };
+		23BE87FE0000000000000000 /* EchoView.xib */ = {isa = PBXFileReference; name = "EchoView.xib"; path = "Controller/EchoView.xib"; sourceTree = "<group>"; };
+		9C9C6EC20000000000000000 /* ExportView.xib */ = {isa = PBXFileReference; name = "ExportView.xib"; path = "Controller/ExportView.xib"; sourceTree = "<group>"; };
+		157A55860000000000000000 /* ConfigureView.xib */ = {isa = PBXFileReference; name = "ConfigureView.xib"; path = "Controller/ConfigureView.xib"; sourceTree = "<group>"; };
+		80DF96420000000000000000 /* ConfigureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ConfigureViewController.h"; path = "ConfigureViewController.h"; sourceTree = "<group>"; };
+		1D0234FA0000000000000000 /* ConfigureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ConfigureViewController.m"; path = "ConfigureViewController.m"; sourceTree = "<group>"; };
+		F9BD7D060000000000000000 /* ConfigureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ConfigureView.h"; path = "ConfigureView.h"; sourceTree = "<group>"; };
+		95E01BBE0000000000000000 /* ConfigureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ConfigureView.m"; path = "ConfigureView.m"; sourceTree = "<group>"; };
+		729B63CA0000000000000000 /* ExportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ExportViewController.h"; path = "ExportViewController.h"; sourceTree = "<group>"; };
+		EBE028200000000000000000 /* ExportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ExportViewController.m"; path = "ExportViewController.m"; sourceTree = "<group>"; };
+		EB794A8E0000000000000000 /* ExportView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ExportView.h"; path = "ExportView.h"; sourceTree = "<group>"; };
+		879BE9460000000000000000 /* ExportView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ExportView.m"; path = "ExportView.m"; sourceTree = "<group>"; };
+		645731520000000000000000 /* EchoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EchoViewController.h"; path = "EchoViewController.h"; sourceTree = "<group>"; };
+		79D00A000000000000000000 /* EchoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EchoViewController.m"; path = "EchoViewController.m"; sourceTree = "<group>"; };
+		DD3518160000000000000000 /* EchoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EchoView.h"; path = "EchoView.h"; sourceTree = "<group>"; };
+		7957B6CE0000000000000000 /* EchoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EchoView.m"; path = "EchoView.m"; sourceTree = "<group>"; };
+		5612FEDA0000000000000000 /* ImportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ImportViewController.h"; path = "ImportViewController.h"; sourceTree = "<group>"; };
+		F2359D920000000000000000 /* ImportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ImportViewController.m"; path = "ImportViewController.m"; sourceTree = "<group>"; };
+		CEF0E59E0000000000000000 /* ImportView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ImportView.h"; path = "ImportView.h"; sourceTree = "<group>"; };
+		6B1384560000000000000000 /* ImportView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ImportView.m"; path = "ImportView.m"; sourceTree = "<group>"; };
+		47CECC620000000000000000 /* BankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BankViewController.h"; path = "BankViewController.h"; sourceTree = "<group>"; };
+		E3F16B1A0000000000000000 /* BankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BankViewController.m"; path = "BankViewController.m"; sourceTree = "<group>"; };
+		C0ACB3260000000000000000 /* BankView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BankView.h"; path = "BankView.h"; sourceTree = "<group>"; };
+		5CCF51DE0000000000000000 /* BankView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BankView.m"; path = "BankView.m"; sourceTree = "<group>"; };
+		398A99EA0000000000000000 /* EchoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EchoController.h"; path = "EchoController.h"; sourceTree = "<group>"; };
+		D5AD38A20000000000000000 /* EchoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EchoController.m"; path = "EchoController.m"; sourceTree = "<group>"; };
+		B26880AE0000000000000000 /* Echo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Echo.h"; path = "Echo.h"; sourceTree = "<group>"; };
+		4E8B1F660000000000000000 /* Echo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Echo.m"; path = "Echo.m"; sourceTree = "<group>"; };
+		2B4667720000000000000000 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ViewController.h"; path = "ViewController.h"; sourceTree = "<group>"; };
+		C769062A0000000000000000 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ViewController.m"; path = "ViewController.m"; sourceTree = "<group>"; };
+		A4244E360000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		4046ECEE0000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BEC77E00000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CE46E60000000000000000 /* Cocoa.framework in Frameworks */,
+				6B82D1FF0000000000000000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3E84C00000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				C871128E0000000000000000 /* CloudCoinIE.Mac */,
+				DF8673030000000000000000 /* Frameworks */,
+				F69BD3780000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F69BD3780000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248A146E0000000000000000 /* CloudCoinIE.Mac.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		DF8673030000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9F060220000000000000000 /* Foundation.framework */,
+				ABAC2DAA0000000000000000 /* Cocoa.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		C871128E0000000000000000 /* CloudCoinIE.Mac */ = {
+			isa = PBXGroup;
+			children = (
+				A4244E360000000000000000 /* AppDelegate.h */,
+				9D67FB320000000000000000 /* Assets.xcassets */,
+				C0ACB3260000000000000000 /* BankView.h */,
+				47CECC620000000000000000 /* BankViewController.h */,
+				F9BD7D060000000000000000 /* ConfigureView.h */,
+				80DF96420000000000000000 /* ConfigureViewController.h */,
+				B26880AE0000000000000000 /* Echo.h */,
+				398A99EA0000000000000000 /* EchoController.h */,
+				DD3518160000000000000000 /* EchoView.h */,
+				645731520000000000000000 /* EchoViewController.h */,
+				8F23C8BA0000000000000000 /* Entitlements.plist */,
+				EB794A8E0000000000000000 /* ExportView.h */,
+				729B63CA0000000000000000 /* ExportViewController.h */,
+				CEF0E59E0000000000000000 /* ImportView.h */,
+				5612FEDA0000000000000000 /* ImportViewController.h */,
+				1645E1F60000000000000000 /* Info.plist */,
+				801AF7E00000000000000000 /* Main.storyboard */,
+				2B4667720000000000000000 /* ViewController.h */,
+				52F1554C0000000000000000 /* Controller */,
+				6A06B5C10000000000000000 /* Supporting Files */,
+			);
+			name = "CloudCoinIE.Mac";
+			sourceTree = "<group>";
+		};
+		52F1554C0000000000000000 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3202BA760000000000000000 /* BankView.xib */,
+				157A55860000000000000000 /* ConfigureView.xib */,
+				B924D3B20000000000000000 /* Echo.xib */,
+				23BE87FE0000000000000000 /* EchoView.xib */,
+				9C9C6EC20000000000000000 /* ExportView.xib */,
+				AAE0A13A0000000000000000 /* ImportView.xib */,
+			);
+			name = "Controller";
+			sourceTree = "<group>";
+		};
+		6A06B5C10000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4046ECEE0000000000000000 /* AppDelegate.m */,
+				5CCF51DE0000000000000000 /* BankView.m */,
+				E3F16B1A0000000000000000 /* BankViewController.m */,
+				95E01BBE0000000000000000 /* ConfigureView.m */,
+				1D0234FA0000000000000000 /* ConfigureViewController.m */,
+				4E8B1F660000000000000000 /* Echo.m */,
+				D5AD38A20000000000000000 /* EchoController.m */,
+				7957B6CE0000000000000000 /* EchoView.m */,
+				79D00A000000000000000000 /* EchoViewController.m */,
+				879BE9460000000000000000 /* ExportView.m */,
+				EBE028200000000000000000 /* ExportViewController.m */,
+				6B1384560000000000000000 /* ImportView.m */,
+				F2359D920000000000000000 /* ImportViewController.m */,
+				C769062A0000000000000000 /* ViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3212E6A0000000000000000 /* CloudCoinIE.Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C65C37950000000000000000 /* Build configuration list for PBXNativeTarget "CloudCoinIE.Mac" */;
+			buildPhases = (
+				255B77660000000000000000 /* Sources */,
+				8BEC77E00000000000000000 /* Frameworks */,
+				4AB50A530000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CloudCoinIE.Mac";
+			productName = "CloudCoinIE.Mac";
+			productReference = 248A146E0000000000000000 /* CloudCoinIE.Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB71E3DE0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AF46D7200000000000000000 /* Build configuration list for PBXProject "CloudCoinIE.Mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E3E84C00000000000000000;
+			productRefGroup = F69BD3780000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3212E6A0000000000000000 /* CloudCoinIE.Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AB50A530000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801409D20000000000000000 /* Assets.xcassets in Resources */,
+				F8F1F0960000000000000000 /* Info.plist in Resources */,
+				71CFD75A0000000000000000 /* Entitlements.plist in Resources */,
+				EAADBE1E0000000000000000 /* Main.storyboard in Resources */,
+				638BA4E20000000000000000 /* Echo.xib in Resources */,
+				DC698BA60000000000000000 /* BankView.xib in Resources */,
+				5547726A0000000000000000 /* ImportView.xib in Resources */,
+				CE25592E0000000000000000 /* EchoView.xib in Resources */,
+				47033FF20000000000000000 /* ExportView.xib in Resources */,
+				BFE126B60000000000000000 /* ConfigureView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		255B77660000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BF0D7A0000000000000000 /* ConfigureViewController.h in Sources */,
+				B19CF43E0000000000000000 /* ConfigureViewController.m in Sources */,
+				2A7ADB020000000000000000 /* ConfigureView.h in Sources */,
+				A358C1C60000000000000000 /* ConfigureView.m in Sources */,
+				1C36A88A0000000000000000 /* ExportViewController.h in Sources */,
+				95148F4E0000000000000000 /* ExportViewController.m in Sources */,
+				DF2761200000000000000000 /* ExportView.h in Sources */,
+				86D05CD60000000000000000 /* ExportView.m in Sources */,
+				FFAE439A0000000000000000 /* EchoViewController.h in Sources */,
+				788C2A5E0000000000000000 /* EchoViewController.m in Sources */,
+				F16A11220000000000000000 /* EchoView.h in Sources */,
+				6A47F7E60000000000000000 /* EchoView.m in Sources */,
+				E325DEAA0000000000000000 /* ImportViewController.h in Sources */,
+				5C03C56E0000000000000000 /* ImportViewController.m in Sources */,
+				D4E1AC320000000000000000 /* ImportView.h in Sources */,
+				4DBF92F60000000000000000 /* ImportView.m in Sources */,
+				C69D79BA0000000000000000 /* BankViewController.h in Sources */,
+				3F7B607E0000000000000000 /* BankViewController.m in Sources */,
+				B85947420000000000000000 /* BankView.h in Sources */,
+				31372E060000000000000000 /* BankView.m in Sources */,
+				AA1514CA0000000000000000 /* EchoController.h in Sources */,
+				22F2FB8E0000000000000000 /* EchoController.m in Sources */,
+				9BD0E2520000000000000000 /* Echo.h in Sources */,
+				14AEC9160000000000000000 /* Echo.m in Sources */,
+				8D8CAFDA0000000000000000 /* ViewController.h in Sources */,
+				66A969E00000000000000000 /* ViewController.m in Sources */,
+				7F487D620000000000000000 /* AppDelegate.h in Sources */,
+				F82664260000000000000000 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E583C4A0000000000000000 /* MonoMac */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+			};
+			name = MonoMac;
+		};
+		736230E00000000000000000 /* MonoMac */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "CloudCoinIE.Mac";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoMac;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF46D7200000000000000000 /* Build configuration list for PBXProject "CloudCoinIE.Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E583C4A0000000000000000 /* MonoMac */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoMac;
+		};
+		C65C37950000000000000000 /* Build configuration list for PBXNativeTarget "CloudCoinIE.Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736230E00000000000000000 /* MonoMac */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoMac;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB71E3DE0000000000000000 /* Project object */;
+}

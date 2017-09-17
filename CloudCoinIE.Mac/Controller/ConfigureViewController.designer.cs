@@ -12,6 +12,12 @@ namespace CloudCoinIE.Mac.Controller
 	[Register ("ConfigureViewController")]
 	partial class ConfigureViewController
 	{
+		[Outlet]
+		AppKit.NSTextField lblWorkspace { get; set; }
+
+		[Outlet]
+		AppKit.NSTextField lblWorkspaceDescription { get; set; }
+
 		[Action ("backupClick:")]
 		partial void backupClick (Foundation.NSObject sender);
 
@@ -23,6 +29,15 @@ namespace CloudCoinIE.Mac.Controller
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (lblWorkspace != null) {
+				lblWorkspace.Dispose ();
+				lblWorkspace = null;
+			}
+
+			if (lblWorkspaceDescription != null) {
+				lblWorkspaceDescription.Dispose ();
+				lblWorkspaceDescription = null;
+			}
 		}
 	}
 }

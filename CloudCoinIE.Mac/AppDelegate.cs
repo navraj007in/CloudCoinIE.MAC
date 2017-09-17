@@ -15,7 +15,12 @@ namespace CloudCoinIE.Mac
 
         public AppDelegate()
         {
-            fileUtils = FileUtils.GetInstance(defaultPath);
+		
+            var defaults = NSUserDefaults.StandardUserDefaults;
+            if (defaults.StringForKey("workspace").Length == 0)
+                fileUtils = FileUtils.GetInstance(defaultPath);
+            else
+                fileUtils = FileUtils.GetInstance(defaults.StringForKey("workspace"));
             fileUtils.CreateDirectoryStructure();
 
         }
