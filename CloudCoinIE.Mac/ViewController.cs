@@ -10,15 +10,14 @@ namespace CloudCoinIE.Mac
         public ViewController(IntPtr handle) : base(handle)
         {
         }
-
+        bool isDisclaimerShown = false;
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             this.Title = "CloudCoin IE";
 
-	
-            // Do any additional setup after loading the view.
-        }
+			// Do any additional setup after loading the view.
+		}
 
        
         public override NSObject RepresentedObject
