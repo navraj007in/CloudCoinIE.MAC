@@ -113,8 +113,22 @@ namespace CloudCoinIE.Mac.Controller
             lblTwoFiftiesTotal.StringValue = Convert.ToString((bankTotals[5] + frackedTotals[5] + partialTotals[5]) * 250);
 
             lblTotalCoins.StringValue = "Total Coins in Bank : " + Convert.ToString(bankTotals[0] + frackedTotals[0] + partialTotals[0]);
+            lblValueTotal.StringValue = Convert.ToString(bankTotals[1] + bankTotals[2] + bankTotals[3] +bankTotals[4] +
+                                                         frackedTotals[1] +frackedTotals[2]+frackedTotals[3]+frackedTotals[4] +
+                                                         partialTotals[1] + partialTotals[2] + partialTotals[3] + partialTotals[4]);
+            lblValueTotal.StringValue = Convert.ToString(lblOnesTotal.IntValue
+                                                         + lblFivesTotal.IntValue
+                                                         + lblQtrsTotal.IntValue
+                                                         + lblHundredsTotal.IntValue
+                                                         + lblTwoFiftiesTotal.IntValue);
+            
+            lblCountTotal.StringValue = Convert.ToString(lblOnesCount.IntValue +
+                                                         lblFivesCount.IntValue + 
+                                                         lblHundredsCount.IntValue+
+                                                         lblQtrsCount.IntValue + 
+                                                         lblTwoFiftiesCount.IntValue);
 
-		}// end show
+        }// end show
 		#endregion
 
 		//strongly typed view accessor

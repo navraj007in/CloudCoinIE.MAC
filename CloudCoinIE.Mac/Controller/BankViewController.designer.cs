@@ -13,6 +13,9 @@ namespace CloudCoinIE.Mac.Controller
 	partial class BankViewController
 	{
 		[Outlet]
+		AppKit.NSTextField lblCountTotal { get; set; }
+
+		[Outlet]
 		AppKit.NSTextField lblFivesCount { get; set; }
 
 		[Outlet]
@@ -44,12 +47,20 @@ namespace CloudCoinIE.Mac.Controller
 
 		[Outlet]
 		AppKit.NSTextField lblTwoFiftiesTotal { get; set; }
+
+		[Outlet]
+		AppKit.NSTextField lblValueTotal { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (lblTotalCoins != null) {
-				lblTotalCoins.Dispose ();
-				lblTotalCoins = null;
+			if (lblCountTotal != null) {
+				lblCountTotal.Dispose ();
+				lblCountTotal = null;
+			}
+
+			if (lblValueTotal != null) {
+				lblValueTotal.Dispose ();
+				lblValueTotal = null;
 			}
 
 			if (lblFivesCount != null) {
@@ -90,6 +101,11 @@ namespace CloudCoinIE.Mac.Controller
 			if (lblQtrsTotal != null) {
 				lblQtrsTotal.Dispose ();
 				lblQtrsTotal = null;
+			}
+
+			if (lblTotalCoins != null) {
+				lblTotalCoins.Dispose ();
+				lblTotalCoins = null;
 			}
 
 			if (lblTwoFiftiesCount != null) {
