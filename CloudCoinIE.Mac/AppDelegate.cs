@@ -69,6 +69,7 @@ namespace CloudCoinIE.Mac
 
 		}
 
+		
         public override void DidFinishLaunching(NSNotification notification)
         {
             

@@ -1,23 +1,14 @@
 ﻿<Properties StartupConfiguration="{D1A5EC17-600E-4BE1-B0F3-363B09638531}|Default">
   <MonoDevelop.Ide.ItemProperties.CloudCoinIE.Mac PreferredExecutionTarget="Test1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/Controller/ImportViewController.cs">
     <Files>
-      <File FileName="CloudCoinIE.Mac/CloudCoin/RAIDA.cs" Line="105" Column="28" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Frack_Fixer.cs" Line="19" Column="4" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/RAIDA_Status.cs" Line="55" Column="18" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/DetectionAgent.cs" Line="280" Column="26" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Detector.cs" Line="62" Column="4" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/CoinUtils.cs" Line="318" Column="4" />
-      <File FileName="CloudCoinIE.Mac/Controller/BankViewController.cs" Line="124" Column="13" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/Banker.cs" Line="18" Column="45" />
-      <File FileName="CloudCoinIE.Mac/CloudCoin/FileUtils.cs" Line="44" Column="69" />
-      <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="41" Column="71" />
+      <File FileName="CloudCoinIE.Mac/CloudCoin/RAIDA.cs" Line="105" Column="1" />
       <File FileName="CloudCoinIE.Mac/Controller/EchoViewController.cs" Line="31" Column="67" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/Config.cs" Line="24" Column="64" />
-      <File FileName="CloudCoinIE.Mac/Controller/ConfigureViewController.cs" Line="44" Column="11" />
+      <File FileName="CloudCoinIE.Mac/Controller/ConfigureViewController.cs" Line="32" Column="122" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/Importer.cs" Line="28" Column="48" />
-      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="159" Column="1" />
-      <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="157" Column="2" />
+      <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.cs" Line="205" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

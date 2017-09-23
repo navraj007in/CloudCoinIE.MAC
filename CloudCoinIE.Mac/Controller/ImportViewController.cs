@@ -41,68 +41,119 @@ namespace CloudCoinIE.Mac.Controller
             Initialize();
         }
 
+		private void resumeImport()
+		{
+
+            int count = Directory.GetFiles(AppDelegate.fileUtils.suspectFolder).Length;
+			if (count > 0)
+			{
+                disableButtons();
+				new Thread(() =>
+				{
+
+					Thread.CurrentThread.IsBackground = true;
+
+					int totalRAIDABad = 0;
+					for (int i = 0; i < 25; i++)
+					{
+						if (RAIDA_Status.failsEcho[i])
+						{
+							totalRAIDABad += 1;
+						}
+					}
+					if (totalRAIDABad > 8)
+					{
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.Out.WriteLine("You do not have enough RAIDA to perform an import operation.");
+						Console.Out.WriteLine("Check to make sure your internet is working.");
+						Console.Out.WriteLine("Make sure no routers at your work are blocking access to the RAIDA.");
+						Console.Out.WriteLine("Try to Echo RAIDA and see if the status has changed.");
+						Console.ForegroundColor = ConsoleColor.White;
+
+						insufficientRAIDA();
+                        enableButtons();
+						return;
+					}
+					else
+						import();
+
+					/* run your code here */
+				}).Start();
+
+			}
+		}
         partial void importClicked(NSObject sender)
         {
-			var dlg = NSOpenPanel.OpenPanel;
-			dlg.CanChooseFiles = true;
-			dlg.CanChooseDirectories = false;
-            dlg.AllowsMultipleSelection = true;
+            DirectoryInfo di = new DirectoryInfo(AppDelegate.fileUtils.importFolder);
 
-			dlg.AllowedFileTypes = new string[] { "stack", "jpg", "chest" };
-            updateLog("Showing Dialog");
-			if (dlg.RunModal() == 1)
-			{
-				// Nab the first file
-				var url = dlg.Urls[0];
-                for (int i = 0; i < dlg.Urls.Length; i++)
-                {
-                    Console.WriteLine(dlg.Urls[i].Path);
-                    updateLog(dlg.Urls[i].Path);
+            int numStack = di.GetFiles("*.stack", SearchOption.TopDirectoryOnly).Length;
+            int numJpg = di.GetFiles("*.jpg", SearchOption.TopDirectoryOnly).Length;
+            int numJpeg = di.GetFiles("*.jpeg", SearchOption.TopDirectoryOnly).Length;
+            int totalImportCount = numJpg + numJpeg + numStack;
 
+            if (totalImportCount == 0)
+            {
+				var dlg = NSOpenPanel.OpenPanel;
+				dlg.CanChooseFiles = true;
+				dlg.CanChooseDirectories = false;
+				dlg.AllowsMultipleSelection = true;
 
-                    var filename = dlg.Urls[i].Path;
-					
+				dlg.AllowedFileTypes = new string[] { "stack", "jpg", "chest" };
 
-
-					//var filename = Path.GetFileName(path);
-					if (!File.Exists(fileUtils.importFolder + Path.DirectorySeparatorChar + Path.GetFileName(filename)))
-                        File.Copy(filename, fileUtils.importFolder + Path.GetFileName(filename));
-                    else
-                    {
-                        string msg = "File " + Path.GetFileName(filename) + " already exists. Do you want to overwrite it?";
-
-                        var alert = new NSAlert()
-                        {
-                            AlertStyle = NSAlertStyle.Warning,
-                            InformativeText = msg,
-                                MessageText = "Import File",
-						};
-						alert.AddButton("Ok");
-						alert.AddButton("Cancel");
-
-						nint num = alert.RunModal();
-
-                        if (num == 1000) {
-							File.Copy(filename, fileUtils.importFolder + Path.GetFileName(filename), true);
-						}
-               
-                    }
-                    updateLog("Copied " + filename  + "to " + 
-                              fileUtils.importFolder  + Path.GetFileName(filename));
-                    
-                }
-		
-				
-			}
-
-			int totalRAIDABad = 0;
-			for (int i = 0; i < 25; i++)
-			{
-				if (RAIDA_Status.failsEcho[i])
+				if (dlg.RunModal() == 1)
 				{
-					totalRAIDABad += 1;
+					// Nab the first file
+					var url = dlg.Urls[0];
+					for (int i = 0; i < dlg.Urls.Length; i++)
+					{
+						Console.WriteLine(dlg.Urls[i].Path);
+						updateLog(dlg.Urls[i].Path);
+
+
+						var filename = dlg.Urls[i].Path;
+
+
+
+						//var filename = Path.GetFileName(path);
+						if (!File.Exists(fileUtils.importFolder + Path.DirectorySeparatorChar + Path.GetFileName(filename)))
+							File.Copy(filename, fileUtils.importFolder + Path.GetFileName(filename));
+						else
+						{
+							string msg = "File " + Path.GetFileName(filename) + " already exists. Do you want to overwrite it?";
+
+							var alert = new NSAlert()
+							{
+								AlertStyle = NSAlertStyle.Warning,
+								InformativeText = msg,
+								MessageText = "Import File",
+							};
+							alert.AddButton("OK");
+							alert.AddButton("Cancel");
+
+							nint num = alert.RunModal();
+
+							if (num == 1000)
+							{
+								File.Copy(filename, fileUtils.importFolder + Path.GetFileName(filename), true);
+							}
+
+						}
+						updateLog("Copied " + filename + "to " +
+								  fileUtils.importFolder + Path.GetFileName(filename));
+
+					}
+
+
 				}
 			}
+
+
+			//Check RAIDA Status
+
+			int totalRAIDABad = 0;
+			
+            totalRAIDABad = RAIDA_Status.failsEcho.Where(c => c).Count();
+
 			if (totalRAIDABad > 8)
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
@@ -118,27 +169,41 @@ namespace CloudCoinIE.Mac.Controller
                 updateLog("Try to Echo RAIDA and see if the status has changed.");
 
                 //txtImportLog.InsertText(new NSString());
-                import_Click.Enabled = true;
-				//cmdRestore.IsEnabled = true;
+                enableButtons();
+                //cmdRestore.IsEnabled = true;
 
 				return;
 			}
-            import_Click.Enabled = false;
-			//cmdRestore.IsEnabled = false;
+
+            disableButtons();
+            //cmdRestore.IsEnabled = false;
 			//progressBar.Visibility = Visibility.Visible;
 			new Thread(() =>
 			{
 				Thread.CurrentThread.IsBackground = true;
 				import();
 
-				/* run your code here */
-				Console.WriteLine("Hello, world");
 			}).Start();
         }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            resumeImport();
         }
+        private void enableButtons() {
+			BeginInvokeOnMainThread(() =>
+			{
+				import_Click.Enabled = true;
+			});
+
+		}
+        private void disableButtons() {
+			BeginInvokeOnMainThread(() =>
+			{
+                import_Click.Enabled = false;
+			});
+
+		}
 		public void detect()
 		{
 			Stopwatch stopwatch = new Stopwatch();
@@ -172,7 +237,7 @@ namespace CloudCoinIE.Mac.Controller
 				import_Click.Enabled = true;
 			});
 
-			RefreshCoins?.Invoke(this, new EventArgs());
+			//RefreshCoins?.Invoke(this, new EventArgs());
 
 
             //cmdRestore.IsEnabled = true;
@@ -207,10 +272,13 @@ namespace CloudCoinIE.Mac.Controller
         {
         }
 
+		private void insufficientRAIDA()
+		{
+
+		}
 		public void import()
 		{
 
-            //Check RAIDA Status
 
             //CHECK TO SEE IF THERE ARE UN DETECTED COINS IN THE SUSPECT FOLDER
             DirectoryInfo dirJPegs = new DirectoryInfo(fileUtils.suspectFolder);
@@ -226,7 +294,7 @@ namespace CloudCoinIE.Mac.Controller
 				updateLog("  Finishing importing coins from last time...");
 
 				Console.ForegroundColor = ConsoleColor.White;
-				//detect();
+				detect();
 				Console.Out.WriteLine("  Now looking in import folder for new coins...");// "Now looking in import folder for new coins...");
 				updateLog("  Now looking in import folder for new coins...");
 			} //end if there are files in the suspect folder that need to be imported
@@ -254,6 +322,7 @@ namespace CloudCoinIE.Mac.Controller
 			{
 				detect();
 			}//end if coins to import
+            enableButtons();
 		}   // end import
 
         private void updateLog(String message) {

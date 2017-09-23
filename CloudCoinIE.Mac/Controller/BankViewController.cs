@@ -36,6 +36,13 @@ namespace CloudCoinIE.Mac.Controller
         {
            // showCoins();
         }
+
+		private void Refresh(object sender, EventArgs e)
+		{
+            
+			//bank.showCoins();
+			//export.showCoins();
+		}
 		public bool echoRaida()
 		{
 

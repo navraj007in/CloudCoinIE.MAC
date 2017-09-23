@@ -153,7 +153,7 @@ namespace CloudCoinIE.Mac.Controller
             NSWorkspace.SharedWorkspace.SelectFile(AppDelegate.fileUtils.exportFolder,
                                                    AppDelegate.fileUtils.exportFolder);
 
-			RefreshCoins?.Invoke(this, new EventArgs());
+			//RefreshCoins?.Invoke(this, new EventArgs());
 	
             showCoins();
 		}// end export One
