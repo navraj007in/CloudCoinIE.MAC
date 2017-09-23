@@ -193,14 +193,26 @@ namespace CloudCoinIE.Mac.Controller
         private void enableButtons() {
 			BeginInvokeOnMainThread(() =>
 			{
-				import_Click.Enabled = true;
+                try
+                {
+                    import_Click.Enabled = true;
+                }
+                catch(Exception e){
+                    
+                }
 			});
 
 		}
         private void disableButtons() {
 			BeginInvokeOnMainThread(() =>
 			{
-                import_Click.Enabled = false;
+                try
+                {
+                    import_Click.Enabled = false;
+                }
+                catch(Exception e) {
+                    
+                }
 			});
 
 		}

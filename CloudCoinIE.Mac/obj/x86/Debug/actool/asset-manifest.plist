@@ -10,5 +10,20 @@
 			<string>/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/(null)[2d][AppIcon-128@2x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The app icon set "AppIcon" has an unassigned child.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+	</array>
 </dict>
 </plist>
