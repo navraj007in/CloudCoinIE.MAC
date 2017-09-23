@@ -58,7 +58,7 @@ namespace CloudCoinCore
 		{
 			// LOAD THE .suspect COINS ONE AT A TIME AND TEST THEM
 			int[] results = new int[4]; // [0] Coins to bank, [1] Coins to fracked [2] Coins to Counterfeit
-			String[] suspectFileNames = new DirectoryInfo(this.fileUtils.suspectFolder).GetFiles().Select(o => o.Name).ToArray();//Get all files in suspect folder
+			String[] suspectFileNames = new DirectoryInfo(this.fileUtils.suspectFolder).GetFiles("*.stack").Select(o => o.Name).ToArray();//Get all files in suspect folder
 			int totalValueToBank = 0;
 			int totalValueToCounterfeit = 0;
 			int totalValueToFractured = 0;

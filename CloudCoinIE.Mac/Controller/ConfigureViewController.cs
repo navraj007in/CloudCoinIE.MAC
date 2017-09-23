@@ -4,6 +4,7 @@ using System.Linq;
 using Foundation;
 using AppKit;
 using CloudCoinCore;
+using System.IO;
 
 namespace CloudCoinIE.Mac.Controller
 {
@@ -15,7 +16,6 @@ namespace CloudCoinIE.Mac.Controller
         public ConfigureViewController(IntPtr handle) : base(handle)
         {
             Initialize();
-	
 		}
         
 
@@ -27,6 +27,23 @@ namespace CloudCoinIE.Mac.Controller
 		}
         partial void backupClick(NSObject sender)
         {
+            String[] bankFileNames = new DirectoryInfo(AppDelegate.fileUtils.bankFolder).
+                                                                                           GetFiles("*.stack").
+                                                                                           Select(o => o.Name).ToArray();//Get all files in suspect folder
+            if(bankFileNames.Length == 0)
+            {
+				string msg = "No Coins found in bank for backup.";
+
+				var alert = new NSAlert()
+				{
+					AlertStyle = NSAlertStyle.Warning,
+					InformativeText = msg,
+					MessageText = "Backup",
+				};
+				alert.AddButton("OK");
+		        nint num = alert.RunModal();
+                return;
+            }
 			Banker bank = new Banker(AppDelegate.fileUtils);
 			int[] bankTotals = bank.countCoins(AppDelegate.fileUtils.bankFolder);
 			int[] frackedTotals = bank.countCoins(AppDelegate.fileUtils.frackedFolder);
@@ -143,7 +160,7 @@ namespace CloudCoinIE.Mac.Controller
         }
         partial void changeFolders(NSObject sender)
         {
-			//let defaults = NSUserDefaults.standardUserDefaults()
+   			//let defaults = NSUserDefaults.standardUserDefaults()
 			//defaults.setObject("Coding Explorer", forKey: "
 
 			var dlg = NSOpenPanel.OpenPanel;
@@ -170,14 +187,34 @@ namespace CloudCoinIE.Mac.Controller
 
 				if (num == 1000)
 				{
-					Console.WriteLine(dlg.Urls[0].Path);
-					var defaults = NSUserDefaults.StandardUserDefaults;
-                    defaults.SetString(dlg.Urls[0].Path + System.IO.Path.DirectorySeparatorChar, "workspace");
+					string msgRestart = "Changing the workspace will require you to manually restart the Application.Contniue?";
+					var alertRestart = new NSAlert()
+					{
+						AlertStyle = NSAlertStyle.Warning,
+                        InformativeText = msgRestart,
+						MessageText = "Restart CloudCoin IE",
+					};
+                    alertRestart.AddButton("Yes");
+                    alertRestart.AddButton("No");
 
-                    FileUtils fileUtils = FileUtils.GetInstance(defaults.StringForKey("workspace"));
-					fileUtils.CreateDirectoryStructure();
-                    System.Diagnostics.Process.GetCurrentProcess().Kill();
-                    AppDelegate.fileUtils.rootFolder = fileUtils.rootFolder;
+                    nint numRestart = alertRestart.RunModal();
+					if (numRestart == 1000)
+					{
+						Console.WriteLine(dlg.Urls[0].Path);
+						var defaults = NSUserDefaults.StandardUserDefaults;
+						defaults.SetString(dlg.Urls[0].Path + System.IO.Path.DirectorySeparatorChar, "workspace");
+
+						FileUtils fileUtils = FileUtils.GetInstance(defaults.StringForKey("workspace"));
+						fileUtils.CreateDirectoryStructure();
+						System.Diagnostics.Process.GetCurrentProcess().Kill();
+						AppDelegate.fileUtils.rootFolder = fileUtils.rootFolder;
+
+					}
+					else
+					{
+
+					}
+
 				}
 
 		

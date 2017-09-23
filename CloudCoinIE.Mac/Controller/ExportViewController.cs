@@ -130,12 +130,7 @@ namespace CloudCoinIE.Mac.Controller
 				Console.ForegroundColor = ConsoleColor.White;
 			}//end if they have more than 1000 coins
 
-			Console.Out.WriteLine("  Do you want to export your CloudCoin to (1)jpgs or (2) stack (JSON) file?");
 			int file_type = 0; //reader.readInt(1, 2);
-
-
-
-
 
             Exporter exporter = new Exporter(AppDelegate.fileUtils);
 			//exporter.OnUpdateStatus +=  ;
@@ -147,14 +142,11 @@ namespace CloudCoinIE.Mac.Controller
 			if (file_type == 1)
 			{
 				exporter.writeJPEGFiles(exp_1, exp_5, exp_25, exp_100, exp_250, tag);
-				// stringToFile( json, "test.txt");
 			}
 			else
 			{
 				exporter.writeJSONFile(exp_1, exp_5, exp_25, exp_100, exp_250, tag);
 			}
-
-
 			// end if type jpge or stack
 			Console.Out.WriteLine("  Exporting CloudCoins Completed.");
 
@@ -162,10 +154,8 @@ namespace CloudCoinIE.Mac.Controller
                                                    AppDelegate.fileUtils.exportFolder);
 
 			RefreshCoins?.Invoke(this, new EventArgs());
-			//updateLog("Exporting CloudCoins Completed.");
-			showCoins();
-			//Process.Start(fileUtils.exportFolder);
-			//MessageBox.Show("Export completed.", "Cloudcoins", MessageBoxButtons.OK);
+	
+            showCoins();
 		}// end export One
 		partial void exportClicked(NSObject sender)
         {

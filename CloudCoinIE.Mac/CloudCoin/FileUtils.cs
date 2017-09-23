@@ -30,18 +30,18 @@ namespace CloudCoinCore
 
         public static FileUtils GetInstance(String rootFolder)
         {
-        String importFolder = rootFolder + "Import" + Path.DirectorySeparatorChar;
-        String importedFolder = rootFolder + "Imported" + Path.DirectorySeparatorChar;
-        String trashFolder = rootFolder + "Trash" + Path.DirectorySeparatorChar;
-        String suspectFolder = rootFolder + "Suspect" + Path.DirectorySeparatorChar;
-        String frackedFolder = rootFolder + "Fracked" + Path.DirectorySeparatorChar;
-        String bankFolder = rootFolder + "Bank" + Path.DirectorySeparatorChar;
-        String templateFolder = rootFolder + "Templates" + Path.DirectorySeparatorChar;
-        String counterfeitFolder = rootFolder + "Counterfeit" + Path.DirectorySeparatorChar;
-        String directoryFolder = rootFolder + "Directory" + Path.DirectorySeparatorChar;
-        String exportFolder = rootFolder + "Export" + Path.DirectorySeparatorChar;
-        String languageFolder = rootFolder + "Language" + Path.DirectorySeparatorChar;
-        String partialFolder = rootFolder + "Partial" + Path.DirectorySeparatorChar;
+            String importFolder = rootFolder + Config.importFolder;
+            String importedFolder = rootFolder + Config.importedFolder;
+            String trashFolder = rootFolder + Config.trashFolder;
+            String suspectFolder = rootFolder + Config.suspectFolder;
+            String frackedFolder = rootFolder + Config.frackedFolder;
+            String bankFolder = rootFolder + Config.bankFolder;
+            String templateFolder = rootFolder + Config.templateFolder;
+            String counterfeitFolder = rootFolder + Config.counterfeitFolder;
+            String directoryFolder = rootFolder + Config.directoryFolder;
+            String exportFolder = rootFolder + Config.exportFolder;
+            String languageFolder = rootFolder + Config.languageFolder;
+            String partialFolder = rootFolder + Config.partialFolder;
 
         FileUtils fileUtils = new FileUtils(rootFolder, importFolder, importedFolder, trashFolder, suspectFolder, frackedFolder, bankFolder, templateFolder, counterfeitFolder, directoryFolder, exportFolder, partialFolder);
 
