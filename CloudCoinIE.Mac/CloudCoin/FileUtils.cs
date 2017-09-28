@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
-
+using Foundation;
 
 using SkiaSharp;
 using System.Linq;
@@ -129,6 +129,22 @@ namespace CloudCoinCore
             Directory.CreateDirectory(partialFolder);
 
             //            Directory.CreateDirectory(languageFolder);
+            string[] files = NSBundle.GetPathsForResources("jpg","Templates");
+            foreach (var fl in files){
+                string fileName = Path.GetFileName(fl);
+                try
+                {
+                    File.Copy(fl, templateFolder + fileName);
+                }
+                catch(Exception e) {
+                    Console.WriteLine(e.Message);
+                }
+
+
+			}
+       
+			Console.WriteLine("Moved or Imported:");
+			//Console.WriteLine(sb);
 
         }
 
