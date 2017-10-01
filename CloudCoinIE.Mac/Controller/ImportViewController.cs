@@ -84,6 +84,8 @@ namespace CloudCoinIE.Mac.Controller
 		}
         partial void importClicked(NSObject sender)
         {
+            try{
+                
             DirectoryInfo di = new DirectoryInfo(AppDelegate.fileUtils.importFolder);
 
             int numStack = di.GetFiles("*.stack", SearchOption.TopDirectoryOnly).Length;
@@ -184,7 +186,13 @@ namespace CloudCoinIE.Mac.Controller
 				import();
 
 			}).Start();
-        }
+			}
+			catch (Exception e)
+			{
+                
+			}
+
+		}
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();

@@ -68,6 +68,13 @@ namespace CloudCoinIE.Mac.Controller
                 countQtrs.StringValue = Convert.ToString(0);
                 countHundreds.StringValue = Convert.ToString(0);
                 countTwoFifties.StringValue = Convert.ToString(0);
+                stepperOnes.IntValue = 0;
+                stepperFives.IntValue = 0;
+                stepperQtrs.IntValue = 0;
+                stepperHundreds.IntValue = 0;
+                stepperTwoFifties.IntValue = 0;
+
+                updateTotal();
 			});
 		}
         public override void ViewDidLoad()

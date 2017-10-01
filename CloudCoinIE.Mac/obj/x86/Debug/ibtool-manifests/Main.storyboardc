@@ -23,6 +23,21 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>ngn-hw-lTn</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>ngn-hw-lTn</string>
+				</array>
+				<key>message</key>
+				<string>Automatic preferred width mode for static wrapping text before OS X 10.11, use Explicit or First Runtime Layout Width</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>

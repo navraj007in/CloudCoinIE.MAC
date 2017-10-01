@@ -40,7 +40,7 @@
 /Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Odd-rB-wX6-view-EiL-gd-cUw.nib
 /Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/Poy-TR-h16-view-o3Y-dC-QCt.nib
 /Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/ibtool/Main.storyboardc/ay1-Pn-qcO-view-cic-kP-wKp.nib
-/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csprojResolveAssemblyReference.cache
 /Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csproj.CoreCompileInputs.cache
 /Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.exe
 /Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/CloudCoin IE.pdb
+/Users/navrajsingh/CloudCoinIE.MAC/CloudCoinIE.Mac/obj/x86/Debug/CloudCoinIE.Mac.csprojResolveAssemblyReference.cache

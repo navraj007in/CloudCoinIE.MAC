@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{D1A5EC17-600E-4BE1-B0F3-363B09638531}|Default">
   <MonoDevelop.Ide.ItemProperties.CloudCoinIE.Mac PreferredExecutionTarget="Test1" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIE.Mac/Controller/ImportViewController.cs">
     <Files>
       <File FileName="CloudCoinIE.Mac/CloudCoin/RAIDA.cs" Line="118" Column="3" />
       <File FileName="CloudCoinIE.Mac/Controller/EchoViewController.cs" Line="31" Column="67" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/Config.cs" Line="24" Column="64" />
       <File FileName="CloudCoinIE.Mac/Controller/ConfigureViewController.cs" Line="208" Column="32" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/Importer.cs" Line="28" Column="48" />
-      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="157" Column="2" />
-      <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.cs" Line="192" Column="10" />
+      <File FileName="CloudCoinIE.Mac/Controller/ExportViewController.cs" Line="259" Column="26" />
+      <File FileName="CloudCoinIE.Mac/Controller/ImportViewController.cs" Line="183" Column="11" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/FileUtils.cs" Line="130" Column="13" />
       <File FileName="CloudCoinIE.Mac/CloudCoin/IImporter.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIE.Mac/AppDelegate.cs" Line="94" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
